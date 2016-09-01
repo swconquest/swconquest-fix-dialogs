@@ -2154,7 +2154,7 @@ dialogs = [
      (call_script, "script_end_quest", "qst_rebel_against_faction"),
        ]],
 
-  [anyone|plyr,"rebel_thanks_answer", [], "It was an honour to fight for your cause, {reg65?madame:my lord}.", "rebel_thanks_answer_2", []],
+  [anyone|plyr,"rebel_thanks_answer", [], "It was an honor to fight for your cause, {reg65?madame:my lord}.", "rebel_thanks_answer_2", []],
   [anyone|plyr,"rebel_thanks_answer", [], "You will always have my loyal support, {reg65?my lady:sir}.", "rebel_thanks_answer_2", []],
 
   [anyone,"rebel_thanks_answer_2", [], "I will miss living this life of adventure with you, but my duties await me. So... good-bye for now, {playername}.\
@@ -2288,7 +2288,7 @@ dialogs = [
    "Damn... I'll go along, for now. I have friends in high places. You'll regret this.", "close_window", []],
 
   [anyone|plyr,"defeat_lord_answer", [],
-   "You have fought with honour. You may go free.", "defeat_lord_answer_2",
+   "You have fought with honor. You may go free.", "defeat_lord_answer_2",
    [(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
     (call_script, "script_change_player_honor", 3),
     (call_script, "script_add_log_entry", logent_lord_defeated_but_let_go_by_player, "trp_player",  -1, "$g_talk_troop", "$g_talk_troop_faction")]],
@@ -2493,8 +2493,8 @@ dialogs = [
                                              (faction_get_slot, ":original_ruler", ":original_faction", slot_faction_leader),
                                              (str_store_troop_name, s11, ":original_ruler")],
    "Are you sure you will be up to the task {playername}? You will make many enemies.\
- The lords of our empire have all sworn oaths of homage to {s11}.\
- Such oaths are that of madness, and surely we can count on the support of some... but a difficult road lies ahead.", "pretender_discuss_rebellion_2", []],
+ The lords of our empire have all sworn to be allies of {s11}.\
+ Such allegiances are that of madness, and surely we can count on the support of some... but a difficult road lies ahead.", "pretender_discuss_rebellion_2", []],
 
   [anyone|plyr ,"pretender_discuss_rebellion_2", [],  "I am ready for this struggle.", "pretender_discuss_rebellion_3", []],
   [anyone|plyr ,"pretender_discuss_rebellion_2", [],  "You are right. Perhaps, I should think about this some more.", "pretender_end", []],
@@ -2526,10 +2526,10 @@ dialogs = [
                                              (str_store_troop_name, s15, ":player_ruler"),
                                              (str_store_faction_name, s17, ":original_faction"),
                                              ],
-   "{playername}, you are already oath-bound to serve {s15}.\
+   "{playername}, you are already allied to serve {s15}.\
  As such, I cannot allow you to take up my cause, and let my enemies claim that I am but a mere puppet of {s16}.\
- No, if I am to have the throne of {s17}, I must do it due to the righteousness of my cause and the support of my subjects alone.\
- If you want to help me, you must first free yourself of your oath to {s15}.", "close_window", []],
+ No, if I am to be the leader of {s17}, I must do it due to the righteousness of my cause and the support of my allies alone.\
+ If you want to help me, you must first free yourself of your allegiance to {s15}.", "close_window", []],
 
   [anyone ,"pretender_discuss_rebellion_3", [(troop_get_slot, ":original_faction", "$g_talk_troop", slot_troop_original_faction),
                                              (str_store_faction_name, s12, ":original_faction"),
@@ -2537,7 +2537,7 @@ dialogs = [
                                              (str_store_troop_name, s11, ":original_ruler")],
    "You are a capable warrior, {playername}, and I am sure with your renown as a commander, and my righteous cause, the rulers and the good people of {s12} will flock to our support.\
  The time is ripe for us to act! I will come with you, and together, we will topple the usurper {s11} and take the throne from his bloodied hands.\
- But first, you must give me your oath of homage and accept me as your liege {reg65?lady:lord}.", "pretender_rebellion_ready", []],
+ But first, you must give me your allegiance and accept me as your leader {reg65?lady:lord}.", "pretender_rebellion_ready", []],
 
 
   [anyone ,"pretender_discuss_rebellion", [(is_between, "$g_talk_troop", pretenders_begin, pretenders_end),
@@ -2596,7 +2596,7 @@ dialogs = [
 
   [anyone ,"pretender_discuss_rebellion", [(is_between, "$g_talk_troop", pretenders_begin, pretenders_end),
                      (gt, "$town_to_rebel", 0),
-                     ],   "You have done good work. {s4} and possibly other planets are ready to rebel. Whenever you are ready, let us ride forth to war.", "pretender_rebellion_ready", [
+                     ],   "You have done good work. {s4} and possibly other planets are ready to rebel. Whenever you are ready, let us start the war.", "pretender_rebellion_ready", [
                      (str_store_party_name, 4, "$town_to_rebel"),
      ]],
 
@@ -2728,7 +2728,7 @@ dialogs = [
   [anyone ,"lord_event_choose_friend_renounce", [],  "Good news, {playername}. I would fear for your safety otherwise.\
  If you do encounter {s6}, keep your blaster at your side and don't believe a word.", "lord_pretalk", []],
   
-  [anyone|plyr ,"lord_event_choose_friend", [],  "{s6} is an honourable person, you've no right to speak of them that way.", "lord_event_choose_friend_defend", [
+  [anyone|plyr ,"lord_event_choose_friend", [],  "{s6} is an honorable person, you've no right to speak of them that way.", "lord_event_choose_friend_defend", [
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-10),
       (call_script, "script_change_player_relation_with_troop","$temp",5),
       ]],
@@ -2758,14 +2758,14 @@ dialogs = [
                      (try_end),
                      ],
    #TODO: change conversations according to relation.
-   "{playername}, I've been expecting you. Word has reached my ears of your exploits.\
- Why, I keep hearing such tales of prowess and bravery that my mind was quickly made up.\
+   "{playername}, I've been expecting you.\
+ I keep reading reports of your leadership and bravery in my databank and my mind was quickly made up.\
  I knew that I had found someone worthy of becoming my commander.", "lord_invite_1",
    []],
 
 
-  [anyone|plyr ,"lord_invite_1", [],  "Thank you, {s65}, you honour me with your favour.", "lord_invite_2",  []],
-  [anyone|plyr ,"lord_invite_1", [],  "It is good to have my true value recognised.", "lord_invite_2",  []],
+  [anyone|plyr ,"lord_invite_1", [],  "Thank you, {s65}, you honor me with your favour.", "lord_invite_2",  []],
+  [anyone|plyr ,"lord_invite_1", [],  "It is good to have my true value recognized.", "lord_invite_2",  []],
    
   [anyone ,"lord_invite_2", [],  "Indeed. Let us dispense with the formalities, {playername}; are you ready to swear loyalty to me?", "lord_invite_3",  []],
     
@@ -2937,7 +2937,7 @@ dialogs = [
                          (quest_get_slot, reg5, "qst_incriminate_loyal_commander", slot_quest_gold_reward),
                          ],
    "Hah! Our little plot against {s3} worked perfectly, {playername}.\
- The fool has lost one of their most valuable retainers, and we are one step closer to bringing them to their knees.\
+ The fool has lost one of their most valuable allies, and we are one step closer to bringing their destruction.\
  Here, this purse contains {reg5} credits, and I wish you to have it. You deserve every one.\
  And, need I remind you, there could be much more to come if you've a mind to earn it...", "lord_generic_mission_completed",[
      (call_script, "script_end_quest", "qst_incriminate_loyal_commander"),
@@ -3310,7 +3310,7 @@ dialogs = [
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_bring_back_runaway_serfs"),
                          (check_quest_succeeded, "qst_bring_back_runaway_serfs")],
-   "Damn me, but you've done it, {playername}. All the serfs are back and they're busy preparing for the harvest.\
+   "Damn me, but you've done it, {playername}. All the servants are back and they're busy preparing for the harvest.\
  You certainly earned your reward. Here, take it, with my compliments.", "lord_generic_mission_completed",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",4),
     (call_script, "script_troop_add_gold", "trp_player", 300),
@@ -3322,16 +3322,16 @@ dialogs = [
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_bring_back_runaway_serfs"),
                          (check_quest_failed, "qst_bring_back_runaway_serfs"),],
-   "{playername}. I have been waiting patiently for my serfs, yet none have returned. Have you an explanation?\
- Were you outwitted by simple fieldhands, or are you merely incompetent?\
+   "{playername}. I have been waiting patiently for my servants, yet none have returned. Have you an explanation?\
+ Were you outwitted by simple servants, or are you merely incompetent?\
  Or perhaps you are plotting with my enemies, intending to ruin me...", "lord_bring_back_runaway_serfs_failed", []],
   [anyone|plyr,"lord_bring_back_runaway_serfs_failed", [],
-   "Forgive me, {s65}, those serfs were slippery as eels.", "lord_bring_back_runaway_serfs_failed_1a", []],
+   "Forgive me, {s65}, those servants were as slippery as a smuggler.", "lord_bring_back_runaway_serfs_failed_1a", []],
   [anyone|plyr,"lord_bring_back_runaway_serfs_failed", [],
    "Perhaps if you had treated them better...", "lord_bring_back_runaway_serfs_failed_1b", []],
   [anyone,"lord_bring_back_runaway_serfs_failed_1a", [],
-   "Hmph, that is hardly an excuse for failure, {playername}.\
- Now if you will excuse me, I need to recruit new troops to work these fields before we all starve.", "lord_pretalk",
+   "That is hardly an excuse for failure, {playername}.\
+ Now if you will excuse me, I need to recruit new servants to work these fields before we all starve.", "lord_pretalk",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
     (call_script, "script_end_quest", "qst_bring_back_runaway_serfs")]],
   [anyone,"lord_bring_back_runaway_serfs_failed_1b", [],
@@ -3347,9 +3347,9 @@ dialogs = [
                          (eq,":lords_quest","qst_bring_back_runaway_serfs"),
                          (check_quest_concluded, "qst_bring_back_runaway_serfs"),
                          (assign, reg17, "$qst_bring_back_runaway_serfs_num_parties_returned")],
-   "You disappoint me, {playername}. There were 3 groups of serfs that I charged you to return. 3. Not {reg17}.\
+   "You disappoint me, {playername}. There were 3 groups of servants that I charged you to return. 3. Not {reg17}.\
  I suppose the ones who did come back shall have to work twice as hard to make up for those that got away.\
- As for your reward, {playername}, I'll only pay you for the serfs you returned, not the ones you let fly.\
+ As for your reward, {playername}, I'll only pay you for the servants you returned, not the ones you let escape.\
  Here. Take it, and let this business be done.", "lord_runaway_serf_half_completed",
    [(store_mul, ":reward", "$qst_bring_back_runaway_serfs_num_parties_returned", 100),
     (val_div, ":reward", 2),
@@ -3606,7 +3606,7 @@ dialogs = [
    "You have been most helpful, {playername}. My thanks.", "lord_generic_mission_completed",[]],
 
   [anyone|plyr,"lord_generic_mission_completed", [],
-   "It was an honour to serve.", "lord_pretalk",[]],
+   "It was an honor to serve.", "lord_pretalk",[]],
 
 ##  [anyone|plyr,"lord_generic_mission_failed", [],
 ##   "I'm sorry I failed you sir. It won't happen again.", "lord_pretalk",
@@ -3632,7 +3632,7 @@ dialogs = [
    "Alas, I don't have sufficient funds, {s65}. But I'll pay you soon enough.", "lord_pay_debt_3_2", []],
 
   [anyone, "lord_pay_debt_3_1", [],
-   "Ah, excellent. You are a {man/woman} of honour, {playername}. I am satisfied, your debt to me has been paid in full.", "lord_pretalk", []],
+   "Ah, excellent. You are a {man/woman} of honor, {playername}. I am satisfied, your debt to me has been paid in full.", "lord_pretalk", []],
 
   [anyone, "lord_pay_debt_3_2", [],
    "Well, don't keep me waiting much longer.", "lord_pretalk", []],
@@ -4151,7 +4151,7 @@ dialogs = [
 							 (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                              (eq, "$players_oath_renounced_against_faction", "$g_talk_troop_faction"),
                              (str_store_faction_name, s4, "$g_talk_troop_faction"),],
-   "{s66}, I wish to restore my oath to {s4}.", "lord_ask_pardon_after_oath_renounced",[]],
+   "{s66}, I wish to restore my allegiance to {s4}.", "lord_ask_pardon_after_oath_renounced",[]],
 
   [anyone,"lord_ask_pardon_after_oath_renounced",
    [
@@ -4214,10 +4214,10 @@ dialogs = [
        (try_end),
        (try_begin),
          (eq, ":num_centers_written", 0),#white peace
-         (str_store_string, s11, "@Very well, I will accept you back into my ranks, if you're ready to swear your solemn oath once more."),
+         (str_store_string, s11, "@Very well, I will accept you back into my ranks, if you're ready to swear your allegiance once more."),
          (assign, "$players_oath_renounced_terms_state", 1),
        (else_try),
-         (str_store_string, s11, "@A pardon will only be possible if you are willing to cede {s17} to me. Do you agree my terms?"),
+         (str_store_string, s11, "@A pardon will only be possible if you are willing to surrender {s17} to me. Do you agree my terms?"),
          (assign, "$players_oath_renounced_terms_state", 2),
        (try_end),
      (else_try),
@@ -4263,7 +4263,7 @@ dialogs = [
 
 
   [anyone,"lord_ask_pardon_after_renounce_peace",
-   [], "Excellent. Though you strayed from us, {playername}, it gladdens all our hearts that you have found your way back to the right path. I hereby restore your homage to me. Rise once more as an honoured {man/warrior} in my service.", "lord_pretalk",
+   [], "Excellent. Though you strayed from us, {playername}, what is most important is that you have found your way back to the right path. I hereby restore your planets and you are once more an honored {man/warrior} in my service.", "lord_pretalk",
    [
      (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
        (store_faction_of_party, ":cur_center_faction", ":cur_center"),
@@ -4393,7 +4393,7 @@ dialogs = [
                              (store_partner_quest, ":lords_quest"),
                              (neq, ":lords_quest", "qst_join_faction"),
                             ],
-   "{s66}, I wish to become your sworn {man/woman} and fight for your honour.", "lord_ask_enter_service",[]],
+   "{s66}, I wish to become your ally and fight for your cause.", "lord_ask_enter_service",[]],
 
   [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
                              (ge, "$g_talk_troop_faction_relation", 0),
@@ -4403,7 +4403,7 @@ dialogs = [
                              (eq, "$players_faction", "$g_talk_troop_faction"),
                              (eq, "$player_has_homage", 1),
                             ],
-   "{s66}, I wish to be released from my oath to you.", "lord_ask_leave_service",[]],
+   "{s66}, I wish to be released from my allegiance to you.", "lord_ask_leave_service",[]],
 
 ##  [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
 ##                             (ge, "$g_talk_troop_faction_relation", 0),
@@ -5421,7 +5421,7 @@ dialogs = [
                                                       (str_store_party_name, s1, ":ai_object")]],
 
 #  [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_raiding_around_center)],
-#   "We ride out to loot the world of {s1} to punish the foe for his misdeeds.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+#   "We travel out to loot the world of {s1} to punish the foe for his misdeeds.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
 #                                                               (str_store_party_name, s1, ":ai_object")]],
 
   [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_raiding_around_center)],
@@ -5485,7 +5485,7 @@ dialogs = [
   [anyone,"lord_ask_follow", [(party_get_slot, ":dont_follow_until_time", "$g_encountered_party", slot_party_dont_follow_player_until_time),
                               (store_current_hours, ":cur_time"),
                               (lt, ":cur_time", ":dont_follow_until_time")],
-   "I enjoy your company, {playername}, but there are other things I must attend to. Perhaps in a few days I can ride with you again.", "close_window",
+   "I enjoy your company, {playername}, but there are other things I must attend to. Perhaps in a few days I can join with you again.", "close_window",
    [(assign, "$g_leave_encounter",1)]],
 
   [anyone,"lord_ask_follow", [(troop_get_slot, ":troop_renown", "$g_talk_troop", slot_troop_renown),
@@ -5557,14 +5557,14 @@ dialogs = [
        (gt, reg6,0)], #note that we abuse the value of reg6 in the next line.
  "I would be glad to fight at your side, my friend, but there is a problem...\
  The thing is, I've found myself in a bit of debt that I must repay very soon. {reg6} credits altogether,\
- and I am honour-bound to return every credit. Unless you've got {reg6} credits with you that you can spare,\
+ and I am honor-bound to return every credit. Unless you've got {reg6} credits with you that you can spare,\
  I've to keep my mind on getting this weight off my neck.", "knight_offer_join_2",[]],
   [anyone ,"knight_offer_join", [(gt,reg6, 100000)], "Join you? I think not.", "close_window",[]],
   [anyone ,"knight_offer_join", [], "Indeed, my friend, I'll be happy to join you.", "knight_offer_join_2",[]],
 
   [anyone|plyr,"knight_offer_join_2", [(gt, reg6,0),(store_troop_gold, ":gold", "trp_player"),(gt,":gold",reg6)],
    "Here, take it, all {reg6} credits you need. 'Tis only money.", "knight_offer_join_accept",[(troop_remove_gold, "trp_player",reg6)]],
-  [anyone|plyr,"knight_offer_join_2", [(le, reg6,0)], "Then let us ride together, my friend.", "knight_offer_join_accept",[]],
+  [anyone|plyr,"knight_offer_join_2", [(le, reg6,0)], "Then let us travel together, my friend.", "knight_offer_join_accept",[]],
    
   [anyone|plyr,"knight_offer_join_2", [(eq, "$talk_context", tc_hero_freed)], "That's good to know. I will think on it.", "close_window",[]],
   [anyone|plyr,"knight_offer_join_2", [(neq, "$talk_context", tc_hero_freed)], "That's good to know. I will think on it.", "hero_pretalk",[]],
@@ -5642,10 +5642,10 @@ dialogs = [
                                      (faction_get_slot, ":players_lord", "$players_faction", slot_faction_leader),
                                      (neq, ":players_lord", "trp_player"),
                                      (str_store_troop_name, s5, ":players_lord"),
-                                     ], "You are already oath-bound to serve {s5}, are you not?", "lord_give_oath_under_oath_already",[]],
+                                     ], "You are already allied to serve {s5}, are you not?", "lord_give_oath_under_oath_already",[]],
   [anyone|plyr ,"lord_give_oath_under_oath_already", [], "Indeed I am, {s65}. Forgive my rambling.", "lord_pretalk",[]],
 
-  [anyone,"lord_ask_enter_service", [(lt, "$g_talk_troop_relation", -5)], "I accept oaths only from those I can trust to keep them, {playername}.", "lord_pretalk",[]],
+  [anyone,"lord_ask_enter_service", [(lt, "$g_talk_troop_relation", -5)], "I accept allegiances only from those I can trust to keep them, {playername}.", "lord_pretalk",[]],
 
 
   [anyone,"lord_ask_enter_service",
@@ -5666,9 +5666,9 @@ dialogs = [
        (assign, "$g_invite_offered_center", reg0),
      (try_end),
      ],
-   "You are known as a brave {man-at-arms/warrior} and a fine leader of troops, {playername}.\
+   "You are known as a brave {warrior/warrior} and a fine leader of troops, {playername}.\
  I shall be pleased to accept you into my service and be my commander,\
- if you are ready to swear homage to me.", "lord_give_oath_1",[]],
+ if you are ready to swear your allegiance to me.", "lord_give_oath_1",[]],
 
   [anyone,"lord_ask_enter_service", [], "You've yet to show yourself as a competent commander, {playername}.\
  Take a blaster to the skull of my enemies, then perhaps...\
@@ -5678,7 +5678,7 @@ dialogs = [
   [anyone|plyr,"lord_give_oath_1", [],  "Forgive me, {s65}, I must give the matter more thought first...", "lord_give_oath_give_up", []],
 
   [anyone,"lord_give_oath_give_up", [],  "What are you playing at, {playername}? Go and make up your mind, and stop wasting my time.", "close_window", [(assign, "$g_leave_encounter",1)]],
-  [anyone,"lord_give_oath_2", [],  "Good. Then repeat the words of the oath with me: I swear homage to you as lawful ruler of the {s41}.", "lord_give_oath_3", [
+  [anyone,"lord_give_oath_2", [],  "Good. Then repeat these words with me: I swear allegiance to you as ruler of the {s41}.", "lord_give_oath_3", [
             (str_store_faction_name, 41, "$g_talk_troop_faction"),
             (try_begin),
                 (is_between, "$g_talk_troop", pretenders_begin, pretenders_end),
@@ -5687,12 +5687,12 @@ dialogs = [
             (try_end),
       ]],
 
-  [anyone|plyr,"lord_give_oath_3", [],  "I pledge homage to you as lawful ruler of the {s41}.", "lord_give_oath_4", []],
+  [anyone|plyr,"lord_give_oath_3", [],  "I pledge allegiance to you as ruler of the {s41}.", "lord_give_oath_4", []],
   [anyone|plyr,"lord_give_oath_3", [],  "Excuse me, {reg65?my lady:sir}. But I feel I need to think about this.", "lord_give_oath_give_up", []],
 
-  [anyone,"lord_give_oath_4", [],  "I will remain as your loyal and devoted {man/follower} as long as my breath remains....", "lord_give_oath_5", []],
+  [anyone,"lord_give_oath_4", [],  "I will remain as your loyal and devoted {ally/ally} as long as my breath remains....", "lord_give_oath_5", []],
 
-  [anyone|plyr,"lord_give_oath_5", [],  "I will remain as your loyal and devoted {man/follower} as long as my breath remains...", "lord_give_oath_6", []],
+  [anyone|plyr,"lord_give_oath_5", [],  "I will remain as your loyal and devoted {ally/ally} as long as my breath remains...", "lord_give_oath_6", []],
   [anyone|plyr,"lord_give_oath_5", [],  "{reg65?My lady:Sir}, may I ask for some time to think about this?", "lord_give_oath_give_up", []],
 
   [anyone,"lord_give_oath_6", [],  "...and I will be at your side to fight your enemies should you need me.", "lord_give_oath_7", []],
@@ -5700,12 +5700,12 @@ dialogs = [
   [anyone|plyr,"lord_give_oath_7", [],  "...and I will be at your side to fight your enemies should you need me.", "lord_give_oath_8", []],
   [anyone|plyr,"lord_give_oath_7", [],  "{reg65?My lady:My lord}, please give me more time to think about this.", "lord_give_oath_give_up", []],
 
-  [anyone,"lord_give_oath_8", [],  "Finally, I will uphold your lawful claims and those of your legitimate heirs.", "lord_give_oath_9", []],
+  [anyone,"lord_give_oath_8", [],  "Finally, I will uphold your leadership claim and those of our allies.", "lord_give_oath_9", []],
 
-  [anyone|plyr,"lord_give_oath_9", [],  "Finally, I will uphold your lawful claims and those of your legitimate heirs.", "lord_give_oath_10", []],
+  [anyone|plyr,"lord_give_oath_9", [],  "Finally, I will uphold your leadership claim and those of our allies.", "lord_give_oath_10", []],
   [anyone|plyr,"lord_give_oath_9", [],  "{reg65?My lady:Sir}, I must have more time to consider this.", "lord_give_oath_give_up", []],
 
-  [anyone,"lord_give_oath_10", [],  "Very well. You have given me your solemn oath, {playername}. May you uphold it always, with proper courage and devotion.", "lord_give_oath_go_on_2", []],
+  [anyone,"lord_give_oath_10", [],  "Very well. You have given me your allegiance, {playername}. May you uphold it always, with proper courage and devotion to our cause.", "lord_give_oath_go_on_2", []],
 
   [anyone,"lord_give_oath_go_on_2",
    [
@@ -5717,7 +5717,7 @@ dialogs = [
        (str_store_party_name, s1, "$g_invite_offered_center"),
      (try_end),
      ],
-   "Let it be known that from this day forward, you are my sworn {man/follower} and commander.\
+   "Let it be known that from this day forward, you are my sworn {ally/ally} and commander.\
  I give you my protection and grant you the right to bear arms in my name, and I pledge that I shall not deprive you of your life, liberty or properties except by the lawful judgment of your peers or by the law and custom of the Galaxy.{reg1? Furthermore I give you the planet of {s1} with all its nearby facilities.:}", "lord_give_oath_go_on_3", []],
 
   [anyone,"lord_give_oath_go_on_3",
@@ -5734,14 +5734,14 @@ dialogs = [
 #  [anyone,"lord_ask_enter_service", [(lt, "$g_talk_troop_relation", 10),
 #                                     (store_character_level, ":player_level", "trp_player"),
 #                                     (lt, ":player_level", 10),
-#                                     ], "I know not much about you. Keep serving me {playername}. Prove your loyality, then I will know I can trust you and accept your oath.", "lord_pretalk",[]],
+#                                     ], "I know not much about you. Keep serving me {playername}. Prove your loyality, then I will know I can trust you and accept your allegiance.", "lord_pretalk",[]],
 
-##  [anyone,"lord_ask_enter_service", [], "What kind of oath are you willing to make?", "lord_oath_what_kind",[]],
+##  [anyone,"lord_ask_enter_service", [], "What kind of allegiance are you willing to make?", "lord_oath_what_kind",[]],
 ##
-##  [anyone|plyr ,"lord_oath_what_kind", [], "I will give you my oath to serve you for two months.", "lord_oath_what_kind_2",[(assign, "$temp", 60)]],
-##  [anyone|plyr ,"lord_oath_what_kind", [], "I will give you my oath to serve you for three months.", "lord_oath_what_kind_2",[(assign, "$temp", 90)]],
-##  [anyone|plyr ,"lord_oath_what_kind", [], "I will give you my oath to serve you for six months.", "lord_oath_what_kind_2",[(assign, "$temp", 180)]],
-##  [anyone|plyr ,"lord_oath_what_kind", [], "I will give you my oath to serve you indefinitely.", "lord_oath_what_kind_2",[(assign, "$temp", 720)]],
+##  [anyone|plyr ,"lord_oath_what_kind", [], "I will give you my allegiance to serve you for two months.", "lord_oath_what_kind_2",[(assign, "$temp", 60)]],
+##  [anyone|plyr ,"lord_oath_what_kind", [], "I will give you my allegiance to serve you for three months.", "lord_oath_what_kind_2",[(assign, "$temp", 90)]],
+##  [anyone|plyr ,"lord_oath_what_kind", [], "I will give you my allegiance to serve you for six months.", "lord_oath_what_kind_2",[(assign, "$temp", 180)]],
+##  [anyone|plyr ,"lord_oath_what_kind", [], "I will give you my allegiance to serve you indefinitely.", "lord_oath_what_kind_2",[(assign, "$temp", 720)]],
 ##  [anyone|plyr ,"lord_oath_what_kind", [], "Maybe I should give more thought to this, my lord.", "lord_oath_what_kind_cancel",[]],
 ##  [anyone ,"lord_oath_what_kind_cancel", [], "What nonsense is this? Now go make up your mind and stop wasting my time.", "close_window",[]],
 ##
@@ -5762,20 +5762,20 @@ dialogs = [
 ##      
 ##      (store_mul, ":cost", "$temp2", 100),
 ##      (lt, ":cost", ":benefit"),
-##      ], "That is agreeable {playername}. Give me your oath now and I will accept you as my follower and offer you my protection.", "lord_give_oath_go_on",[]],
+##      ], "That is agreeable {playername}. Give me your allegiance now and I will accept you as my follower and offer you my protection.", "lord_give_oath_go_on",[]],
 ##
 ##  [anyone ,"lord_oath_consider", [], "Hmmm. What you ask for is not acceptible {playername}.", "close_window",[]],
 ##
-##  [anyone|plyr,"lord_give_oath_go_on", [(eq, "$temp", 60)],  "I give you my oath lord, that I will remain in your service for two months.\
+##  [anyone|plyr,"lord_give_oath_go_on", [(eq, "$temp", 60)],  "I give you my allegiance lord, that I will remain in your service for two months.\
 ## During this time, I will be faithful to you,\
 ## I will not act in a way to cause you harm, and I will be at your side to fight your enemies should you need me.", "lord_give_oath_go_on_2", []],
-##  [anyone|plyr,"lord_give_oath_go_on", [(eq, "$temp", 90)],  "I give you my oath lord, that I will remain in your service for three months.\
+##  [anyone|plyr,"lord_give_oath_go_on", [(eq, "$temp", 90)],  "I give you my allegiance lord, that I will remain in your service for three months.\
 ## During this time, I will be faithful to you,\
 ## I will not act in a way to cause you harm, and I will be at your side to fight your enemies should you need me.", "lord_give_oath_go_on_2", []],
-##  [anyone|plyr,"lord_give_oath_go_on", [(eq, "$temp", 180)],  "I give you my oath lord, that I will remain in your service for six months.\
+##  [anyone|plyr,"lord_give_oath_go_on", [(eq, "$temp", 180)],  "I give you my allegiance lord, that I will remain in your service for six months.\
 ## During this time, I will be faithful to you,\
 ## I will not act in a way to cause you harm, and I will be at your side to fight your enemies should you need me.", "lord_give_oath_go_on_2", []],
-##  [anyone|plyr,"lord_give_oath_go_on", [(gt, "$temp", 700)],  "I give you my oath lord, that I will remain as your loyal and devoted {man/follower} as long as my breath remains.\
+##  [anyone|plyr,"lord_give_oath_go_on", [(gt, "$temp", 700)],  "I give you my allegiance lord, that I will remain as your loyal and devoted {man/follower} as long as my breath remains.\
 ## I will never act in a way to cause you harm, and I will be at your side to fight your enemies should you need me.", "lord_give_oath_go_on_2", []],
 ##  
 ##  [anyone,"lord_give_oath_go_on_2", [(eq,"$temp2",0)],  "Then let it be know that from now on, you are my sworn {man/follower}.\
@@ -5869,7 +5869,7 @@ dialogs = [
   [anyone,"lord_ask_enter_service", [(str_store_faction_name,5,"$g_talk_troop_faction")], "Heh, a wise move,\
  {playername}. With loyal service, a {man/woman} in my service could become wealthy and powerful,\
  and our enemies shall fall swiftly.\
- However, to enter my service you must first renounce all oaths and bonds,\
+ However, to enter my service you must first renounce all allegiances,\
  and swear to serve only the {s5}.", "lord_enter_service_swear",[]],
   [anyone|plyr ,"lord_enter_service_swear", [], "I do so swear, {s65}.", "lord_enter_service_swear_accepted",[]],
   [anyone|plyr ,"lord_enter_service_swear", [], "I need some time to think about this.", "lord_enter_service_swear_denied",[]],
@@ -5885,14 +5885,14 @@ dialogs = [
   [anyone ,"lord_enter_service_swear_accepted_2", [(str_store_faction_name,5,"$g_talk_troop_faction")],
  "I charge you with rooting out and destroying the forces of our enemies wherever you may find them.\
  Moreover, I will have special tasks for you from time to time, as may some of my other rulers.\
- Serve, fight, and honour your oaths. These things will take you far, if you've a mind for promotion.\
+ Serve, fight, and honor your allegiances. These things will take you far, if you've a mind for promotion.\
  May the force grant us long lives and many victories to toast!", "close_window",[(assign, "$g_leave_encounter",1)]],
 
   [anyone,"lord_ask_leave_service", [(ge, "$g_talk_troop_relation", 1)], "Hrm.\
- Has your oath become burdensome, {playername}? It is unusual to request release from homage,\
+ Has your allegiance become burdensome, {playername}? It is unusual for anyone to request to leave our cause,\
  but in respect of your fine service, I will not hold you if you truly wish to end it.\
  Though you would be sorely missed.", "lord_ask_leave_service_verify",[]],
-  [anyone,"lord_ask_leave_service", [], "Release from homage? Hmm, perhaps it would be for the best...\
+  [anyone,"lord_ask_leave_service", [], "Leave our cause? Hmm, perhaps it would be for the best...\
  However, {playername}, you must be sure that release is what you desire. This is not a thing done lightly.", "lord_ask_leave_service_verify",[]],
 
   [anyone|plyr ,"lord_ask_leave_service_verify", [], "It is something I must do, {s65}.", "lord_ask_leave_service_2",[]],
@@ -5905,7 +5905,7 @@ dialogs = [
   [anyone|plyr ,"lord_ask_leave_service_verify_again", [], "Yes, {s65}.", "lord_ask_leave_service_3",[]],
   [anyone|plyr ,"lord_ask_leave_service_verify_again", [], "Of course not, {s65}. I am ever your loyal commander.", "lord_ask_leave_service_giveup",[]],
 
-  [anyone,"lord_ask_leave_service_3", [], "As you wish. I hereby declare your oaths to be null and void.\
+  [anyone,"lord_ask_leave_service_3", [], "As you wish. I hereby declare your allegiance to be null and void.\
  You will no longer hold planets or titles in my name, and you are released from your duties to my faction.\
  You are free, {playername}.", "lord_ask_leave_service_end",
    [
@@ -5913,7 +5913,7 @@ dialogs = [
         (call_script, "script_player_leave_faction", 1),
     ]],
 
-  [anyone|plyr ,"lord_ask_leave_service_end", [], "Thank you, sir. It was an honour to serve you..", "lord_ask_leave_service_end_2",[]],
+  [anyone|plyr ,"lord_ask_leave_service_end", [], "Thank you, sir. It was an honor to serve you..", "lord_ask_leave_service_end_2",[]],
   [anyone|plyr ,"lord_ask_leave_service_end", [], "My thanks. It feels good to be {a free man/free} once again.", "lord_ask_leave_service_end_2",[]],
 
   [anyone ,"lord_ask_leave_service_end_2", [], "Good-bye then, {playername}, and good luck go with you.", "close_window",
@@ -6134,7 +6134,7 @@ dialogs = [
    "What?! Is this some scheme of yours, {playername}? That's less than half the taxes I'm owed!\
  You have let them get away with murder as well as my money. What a farce!\
  You can forget the money I promised you, I'm taking {reg20} credits from what you collected,\
- and you're lucky I'm leaving you a few credits for honour's sake.", "lord_pretalk",
+ and you're lucky I'm leaving you a few credits for honor's sake.", "lord_pretalk",
    [(troop_remove_gold, "trp_player", reg20),
     (quest_set_slot, "qst_collect_taxes", slot_quest_gold_reward, 0),
     (call_script, "script_end_quest", "qst_collect_taxes"),
@@ -6199,7 +6199,7 @@ Hand over my {reg19} credits, if you please, and end our business together.", "l
 
   [anyone,"lord_hunt_down_fugitive_reward_reject", [],
    "You are a {man/woman} for whom justice is its own reward, eh? As you wish it, {playername}, as you wish it.\
- An honourable sentiment, to be true. Regardless, you've my thanks for ridding me of that {s44}.", "lord_pretalk",[
+ An honorable sentiment, to be true. Regardless, you've my thanks for ridding me of that {s44}.", "lord_pretalk",[
 
        (troop_get_slot, ":insult_string", "$g_talk_troop", slot_lord_reputation_type),
        (val_add, ":insult_string", "str_lord_insult_default"),
@@ -6284,7 +6284,7 @@ Hand over my {reg19} credits, if you please, and end our business together.", "l
 ##  [anyone|plyr,"lord_claim_center_deny", [],
 ##   "I understand sir. Do as you will.", "lord_claim_center_leave_to_lord", []],
 ##  [anyone,"lord_claim_center_deny_2", [],
-##   "Remember that you gave me your oath {playername}. And you agreed to do as told.", "lord_claim_center_deny_3", []],
+##   "Remember that you gave me your allegiance {playername}. And you agreed to do as told.", "lord_claim_center_deny_3", []],
 ##  [anyone,"lord_claim_center_deny_3", [],
 ##   "Yes sir.", "lord_claim_center_leave_to_lord", []],
 ##
@@ -6342,16 +6342,16 @@ Hand over my {reg19} credits, if you please, and end our business together.", "l
 ##                                  (lt, ":number_of_claimed_centers", "$g_player_permitted_castles"),
 ##                                  (assign, reg7, ":number_of_claimed_centers"),
 ##                                  ],
-##   "I had promised you to defend your right to hold {reg7?a:another} system {playername}. Now I honour that promise.\
+##   "I had promised you to defend your right to hold {reg7?a:another} system {playername}. Now I honor that promise.\
 ## I can think of {no man finer than you/no one better than you} to be the {ruler/ruler} of {s4}.\
-## Renew your oath to me now. Then I will be your liege,\
+## Renew your allegiance to me now. Then I will be your liege,\
 ## and I'll support you and protect you against all those who oppose your claim.",
 ##  "lord_claim_center_give_oath",[]],
 ##
 ##                                    
-##  [anyone|plyr,"lord_claim_center_give_oath", [],  "I give you my oath, I will forever be faithful to you,\
+##  [anyone|plyr,"lord_claim_center_give_oath", [],  "I give you my allegiance, I will forever be faithful to you,\
 ## I will never act in a way to cause you harm, and I will be at your side to fight your enemies should you need me.", "lord_claim_center_direct_3", []],
-##  [anyone,"lord_claim_center_direct_3", [],  "You have given your oath of fealty {playername}. I accept your oath and give you the fief of {s4}.\
+##  [anyone,"lord_claim_center_direct_3", [],  "You have given your allegiance of fealty {playername}. I accept your allegiance and give you the fief of {s4}.\
 ## Rule it wisely and protect it against our enemies.", "lord_claim_center_direct_4", [
 ##     (party_set_slot, "$center_to_be_claimed", slot_mainplanet_claimed_by_player, 1),
 ##     (call_script, "script_give_center_to_lord", "$center_to_be_claimed", "trp_player")]],
@@ -6590,7 +6590,7 @@ Hand over my {reg19} credits, if you please, and end our business together.", "l
 
   [anyone,"lord_mercenary_service_accept", [(str_store_faction_name, s9, "$g_talk_troop_faction")],
    "Perfect. Of course you shall have to make a formal declaration of allegiance,\
- and give your oath that you and your company will remain in service to {s9}\
+ and swear that you and your company will remain in service to {s9}\
  for a period of no less than three months.", "lord_mercenary_service_verify", []],
   [anyone|plyr,"lord_mercenary_service_verify", [], "As you wish. Your enemies are my enemies.", "lord_mercenary_service_verify_2", []],
   [anyone|plyr,"lord_mercenary_service_verify", [], "On second thought, forget it.", "lord_mercenary_service_reject", []],
@@ -6623,8 +6623,8 @@ Hand over my {reg19} credits, if you please, and end our business together.", "l
 
   
   [anyone,"lord_mercenary_service_elaborate_duty", [], 
-   "Duties... There are only a few, none of them difficult. The very first thing is to declare your allegiance.\
- An oath of loyalty to our cause. Once that's done, you shall be required to fulfill certain responsibilities.\
+   "Duties... There are only a few, none of them difficult. The very first thing is to declare your allegiance to our cause.\
+ Once that's done, you shall be required to fulfill certain responsibilities.\
  You'll participate in military campaigns, fulfill any duties given to you by your commanders,\
  and most of all you shall attack the enemies of our faction wherever you might find them.", "lord_mercenary_elaborate_1",
    [(faction_get_slot, ":faction_leader", "$g_talk_troop_faction", slot_faction_leader),
@@ -6654,11 +6654,11 @@ Hand over my {reg19} credits, if you please, and end our business together.", "l
  Then you would be rewarded with a planet.", "lord_mercenary_elaborate_1", []],
 
   [anyone,"lord_mercenary_elaborate_banner", [(faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop")],
-   "Only my noble commanders have the honour of carrying their own banners.\
+   "Only my noble commanders have the honor of carrying their own banners.\
  However, after some time in mercenary service, you may earn the opportunity to swear loyalty to me and become my commander,\
  gaining the right to choose a banner of your own and fight under it in battle.", "lord_mercenary_elaborate_1", []],
-  [anyone,"lord_mercenary_elaborate_banner", [], "Only noble commanders of {s10} have the honour of carrying their own banners.\
- However, after some time of mercenary service, perhaps you can earn the opportunity to swear homage to {s10} and become his commander,\
+  [anyone,"lord_mercenary_elaborate_banner", [], "Only noble commanders of {s10} have the honor of carrying their own banners.\
+ However, after some time of mercenary service, perhaps you can earn the opportunity to swear allegiance to {s10} and become his commander,\
  gaining the right to choose a banner of your own and fight under it in battle.", "lord_mercenary_elaborate_1", []],
 
   [anyone,"lord_request_mission_ask", [(store_partner_quest,":lords_quest"),(ge,":lords_quest",0)],
@@ -7138,7 +7138,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                 (store_faction_of_party,":quest_target_center_faction",),
                                 (str_store_faction_name, s14, ":quest_target_center_faction"),
                                 ],
-   "I have a sensitive matter which needs tending to, {playername}, and no trustworthy retainers to take care of it. The fact is that I have a spy in {s13} to keep an eye on things for me, and report anything that might warrant my attention. Every week I send someone to collect the spy's reports and bring them back to me. The job's yours if you wish it.", "lord_mission_told_meet_spy_in_enemy_town",
+   "I have a sensitive matter which needs tending to, {playername}, and no trustworthy allies to take care of it. The fact is that I have a spy in {s13} to keep an eye on things for me, and report anything that might warrant my attention. Every week I send someone to collect the spy's reports and bring them back to me. The job's yours if you wish it.", "lord_mission_told_meet_spy_in_enemy_town",
    [
    ]],
 
@@ -7268,13 +7268,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_bring_back_runaway_serfs")],
- "Well, some of the serfs working my fields in {s4} have run away. The ungrateful nerf herders,\
+ "Well, some of the servants working my fields in {s4} have run away. The ungrateful nerf herders,\
  I let them tend to my herd, harvest my crops and rent my buildings, and this is how they repay me!\
  From what I've been hearing, they're flying to {s3} as fast as they can,\
  and have split up into three groups to try and avoid capture.\
  I want you to capture all three groups and fetch them back to {s4} by whatever means necessary.\
- I should really have them executed for attempting to escape, but we need hands for the upcoming harvest,\
- so I'll let them go off this time with a good beating.", "lord_mission_told",
+ I should really have their contract terminated, but we need hands for the upcoming harvest,\
+ so I'll let them go off this time.", "lord_mission_told",
    [
        (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
        (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
@@ -7283,7 +7283,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (str_store_party_name_link, s3, ":quest_target_center"),
        (str_store_party_name_link, s4, ":quest_object_center"),
        (setup_quest_text,"$random_quest_no"),
-       (str_store_string, s2, "@{s9} asked you to catch the three groups of runaway serfs and bring them back to {s4}, alive and breathing. They said that all three groups are heading towards {s3}."),
+       (str_store_string, s2, "@{s9} asked you to catch the three groups of runaway servants and bring them back to {s4}, alive and breathing. They said that all three groups are heading towards {s3}."),
     ]],
 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_follow_spy")],
@@ -7504,9 +7504,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  With your help, naturally.", "lord_tell_mission_incriminate_commander",[]],
 
   [anyone|plyr,"lord_tell_mission_incriminate_commander", [], "{s66}, I am all ears.", "lord_tell_mission_incriminate_commander_2",[]],
-  [anyone|plyr,"lord_tell_mission_incriminate_commander", [], "I don't wish to involve myself in anything dishonourable against {s15}.", "lord_tell_mission_incriminate_commander_rejected",[]],
+  [anyone|plyr,"lord_tell_mission_incriminate_commander", [], "I don't wish to involve myself in anything dishonorable against {s15}.", "lord_tell_mission_incriminate_commander_rejected",[]],
 
-  [anyone,"lord_tell_mission_incriminate_commander_rejected", [], "Dishonourable? Bah!\
+  [anyone,"lord_tell_mission_incriminate_commander_rejected", [], "Dishonorable? Bah!\
  I was hoping I could count on you, {playername}, but you've shown me what a fool I was.\
  I shall have to find someone whose loyalty I can trust.", "lord_pretalk",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-5),
@@ -7518,7 +7518,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  Of course, the challenge there is to convince {s13} that the datacard is indeed real...", "lord_tell_mission_incriminate_commander_3",[]],
 
   [anyone|plyr,"lord_tell_mission_incriminate_commander_3", [], "Please continue, {s65}...", "lord_tell_mission_incriminate_commander_4",[]],
-  [anyone|plyr,"lord_tell_mission_incriminate_commander_3", [], "No, I will not sully myself with this dishonourable scheme.", "lord_tell_mission_incriminate_commander_rejected",[]],
+  [anyone|plyr,"lord_tell_mission_incriminate_commander_3", [], "No, I will not sully myself with this dishonorable scheme.", "lord_tell_mission_incriminate_commander_rejected",[]],
 
   [anyone,"lord_tell_mission_incriminate_commander_4", [], "This is where you come into play.\
  You'll take the datacard to {s14}, then give it to one of your soldiers and instruct them to take it to {s15}.\
@@ -7895,7 +7895,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  It was a fine gesture, and I thank you for your efforts.", "lady_qst_duel_for_lady_failed", []],
   [anyone|plyr,"lady_qst_duel_for_lady_failed", [], "I beg your forgiveness for my defeat, {s65}...", "lady_qst_duel_for_lady_failed_2",[]],
   [anyone,"lady_qst_duel_for_lady_failed_2", [], "It matters not, dear {playername}. You tried.\
- The truth cannot be proven at the end of a blaster, but you willingly put your life at stake for my honour.\
+ The truth cannot be proven at the end of a blaster, but you willingly put your life at stake for my honor.\
  That alone will convince many of my innocence.", "lady_pretalk",
    [(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 6),
     (add_xp_as_reward, 400),
@@ -7945,7 +7945,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (call_script, "script_end_quest", "qst_rescue_lord_by_replace"),
      ]],
 
-  [anyone|plyr,"lady_generic_mission_succeeded", [], "Always an honour to serve, {s65}.", "lady_pretalk",[]],
+  [anyone|plyr,"lady_generic_mission_succeeded", [], "Always an honor to serve, {s65}.", "lady_pretalk",[]],
 
 
   [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_faction_lady),
@@ -8059,19 +8059,19 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
      (str_store_troop_name, s11, "$g_talk_troop"),
      (str_store_troop_name_link, s13, ":quest_target_troop"),
-     (str_store_string, s2, "@You agreed to challenge {s13} to defend {s11}'s honour."),
+     (str_store_string, s2, "@You agreed to challenge {s13} to defend {s11}'s honor."),
      (setup_quest_text,"$random_quest_no"),
     ]],
   [anyone,"lady_quest_duel_for_lady_2", [], "Very well, as you wish it...\
  My husband has made certain enemies in his life, {playername}. One of the most insidious is {s13}.\
-They are going around making terrible accusations against me, impugning my honour at every turn!\
+They are going around making terrible accusations against me, impugning my honor at every turn!\
  Because they cannot harm my husband directly, they are using me as a target to try and stain our name.\
  You should hear the awful things they have said! I only wish there was someone brave enough to make them recant their slander,\
  but {s13} is a very fine fighter, and widely feared...", "lady_quest_duel_for_lady_3",[]],
 
   [anyone|plyr,"lady_quest_duel_for_lady_3", [], "I fear them not, {s65}. I will make them take back those lies.", "lady_quest_duel_for_lady_3_accepted",[]],
   [anyone,"lady_quest_duel_for_lady_3_accepted", [], "Oh! I can't ask that of you, {playername}, but...\
- I would be forever indebted to you, and you are so sure. It would mean so much if you would defend my honour.\
+ I would be forever indebted to you, and you are so sure. It would mean so much if you would defend my honor.\
  Thank you a thousand times, all my prayers and my favour go with you.", "close_window",
    [
      (quest_get_slot, ":quest_target_troop", "$random_quest_no", slot_quest_target_troop),
@@ -8319,7 +8319,7 @@ They are going around making terrible accusations against me, impugning my honou
  First, you could station a garrison here to protect the planet from any immediate counterattacks,\
  then request an audience with some wealthy ruler and ask them to make you an offer.\
  It would be worth a tidy sum, believe you me.\
- If you do not wish to sell, then you will have to find yourself a leader and protector who would accept homage from you.\
+ If you do not wish to sell, then you will have to find yourself a leader and protector who would accept allegiance from you.\
  Without a leader's investiture and an army at your back, you would have a difficult time holding on to the system.\
  Both you and {s1} would become great big targets for anyone with a few soldiers and a scrap of ambition.\
  ", "siege_won_seneschal_list_options_2",[]],
@@ -9625,7 +9625,7 @@ They are going around making terrible accusations against me, impugning my honou
   
   [anyone|plyr,"runaway_serf_intro_1", [(quest_get_slot, ":lord", "qst_bring_back_runaway_serfs", slot_quest_giver_troop),
                                         (str_store_troop_name, s4, ":lord")],
-   "I have been sent by your {s4} whom you are flying from. He will not punish you if you return now.", "runaway_serf_intro_2",[]],
+   "I have been sent by your {s4} whom you are escaping from. He will not punish you if you return now.", "runaway_serf_intro_2",[]],
    
   [anyone,"runaway_serf_intro_2", [(quest_get_slot, ":target_center", "qst_bring_back_runaway_serfs", slot_quest_target_center),
                                    (str_store_party_name, s6, ":target_center"),
@@ -9636,7 +9636,7 @@ They are going around making terrible accusations against me, impugning my honou
 
   [anyone|plyr,"runaway_serf_intro_3", [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
                                         (str_store_party_name, s1, ":quest_object_center"),],
-   "You have gone against our laws by running from your bondage. You will go back to {s1} now!", "runaway_serf_go_back",
+   "You have gone against our laws by running from your contract. You will go back to {s1} now!", "runaway_serf_go_back",
    [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
     (call_script, "script_change_player_relation_with_center", ":quest_object_center", -1)]],
 
@@ -9899,7 +9899,7 @@ They are going around making terrible accusations against me, impugning my honou
 #Tavernkeepers
 
   [anyone ,"start", [(store_conversation_troop,reg(1)),(ge,reg(1),tavernkeepers_begin),(lt,reg(1),tavernkeepers_end)],
-   "Good day dear {sir/madam}. How can I help you?", "tavernkeeper_talk",
+   "Good day dear {sir/madam}. You look new here so first a word of advice. You will never find a more wretched hive of scum and villainy so you must be cautious. Anyway, how can I help you?", "tavernkeeper_talk",
    [
    #Tavern recruitment START
     (store_encountered_party,reg(2)),
@@ -10083,7 +10083,7 @@ They are going around making terrible accusations against me, impugning my honou
 
   [anyone,"tavernkeeper_hunt_down_fugitive_reward_reject", [],
    "You are a {s25} for whom justice is its own reward, eh? As you wish it, {playername}, as you wish it.\
- An honourable sentiment, to be true.", "tavernkeeper_pretalk",[
+ An honorable sentiment, to be true.", "tavernkeeper_pretalk",[
        (call_script, "script_change_player_honor", 3),
        (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
       (store_partner_quest,":tavernkeepers_quest"),
@@ -10673,7 +10673,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
                        (assign, ":end_cond", 0),
                      (try_end),
                      ],
-   "You look like a {man/lady} of honour and someone who could help us.\
+   "You look like a {man/lady} of honor and someone who could help us.\
  Will you hear my plea?", "farmer_from_bandit_minorplanet_1", []],
 
   [anyone|plyr, "farmer_from_bandit_minorplanet_1", [],
@@ -11243,7 +11243,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
     ]],
 
   [anyone ,"lord_persuade_lords_to_make_peace_no_pay", [],
-   "You are indeed an extraordinary person, {sir/madame}, and it is an honour for me to have known you.\
+   "You are indeed an extraordinary person, {sir/madame}, and it is an honor for me to have known you.\
  You not only did what was impossible and put an end to this terrible war, but you won't even accept a reward for it.\
  Very well, I will not insist on the matter, but please know that you will have our eternal respect and gratitude.", "close_window",
    [
@@ -11445,7 +11445,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
                           ],
    "Dear {playername}. I am in your debt for bringing back my friend's daughter.\
   Please take these {reg8} credits that I promised you.\
-  My friend wished he could give more but paying that ransom brought them to their to his their knees.", "close_window",
+  My friend wished he could give more but paying that ransom almost bankrupt them.", "close_window",
    [(quest_get_slot, ":quest_gold_reward", "qst_kidnapped_girl", slot_quest_gold_reward),
     (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
     (assign, reg8, ":quest_gold_reward"),
@@ -12250,12 +12250,12 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
   [anyone,"start", [(is_between,"$g_talk_troop", planet_admins_begin, planet_admins_end),(eq,"$g_talk_troop_met",0),
                     (str_store_party_name, s9, "$current_town"),
                     (party_slot_eq, "$current_town", slot_mainplanet_lord, "trp_player")],
-   "Welcome to {s9}, {playername}. We were rejoiced by the news that you are the new {chancellor/chancellor} of our minor planet.\
- I am the planet administrator and I would be honoured to serve you in any way I can.", "minorplanet_elder_talk",[]],
+   "Welcome to {s9}, {playername}. We were notified that you are the new {commander/commander} of our minor planet.\
+ I am the planet administrator and I will assist you in any way I can.", "minorplanet_elder_talk",[]],
   
   [anyone ,"start", [(is_between,"$g_talk_troop",planet_admins_begin,planet_admins_end),
                      (party_slot_eq, "$current_town", slot_mainplanet_lord, "trp_player")],
-   "{My chancellor/My chancellor}, you honour our minor planet with your presence.", "minorplanet_elder_talk",[]],
+   "{My commander/My commander}, you honor our minor planet with your presence.", "minorplanet_elder_talk",[]],
 
   [anyone ,"start", [(is_between,"$g_talk_troop",planet_admins_begin,planet_admins_end)],
    "Good day, {sir/madam}.", "minorplanet_elder_talk",[]],
@@ -12747,7 +12747,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
   
   [anyone ,"start", [(is_between,"$g_talk_troop",goods_merchants_begin,goods_merchants_end),
                      (party_slot_eq, "$current_town", slot_mainplanet_lord, "trp_player")],
-   "You honour my humble shop with your presence.", "goods_merchant_talk",[]],
+   "You honor my humble shop with your presence.", "goods_merchant_talk",[]],
   [anyone ,"start", [(is_between,"$g_talk_troop",goods_merchants_begin,goods_merchants_end)],
    "Welcome {sir/madam}. What can I do for you?", "goods_merchant_talk",[]],
 
@@ -13708,7 +13708,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
  
 
   [party_tpl|pt_rescued_prisoners,"start", [(eq,"$talk_context",tc_party_encounter)], "Do you want us to follow you?", "disbanded_troop_ask",[]],
-  [anyone|plyr,"disbanded_troop_ask", [], "Yes. Let us ride together.", "disbanded_troop_join",[]],
+  [anyone|plyr,"disbanded_troop_ask", [], "Yes. Let us travel together.", "disbanded_troop_join",[]],
   [anyone|plyr,"disbanded_troop_ask", [], "No. Not at this time.", "close_window",[(assign, "$g_leave_encounter",1)]],
   [anyone,"disbanded_troop_join", [[neg|party_can_join]], "Unfortunately. You do not have room in your party for us.", "close_window",[(assign, "$g_leave_encounter",1)]],
   [anyone,"disbanded_troop_join", [], "We are at your command.", "close_window",[[party_join],(assign, "$g_leave_encounter",1)]],
