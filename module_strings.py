@@ -146,20 +146,20 @@ strings = [
  Remember that you can press the Tab key at any time to quit this tutorial or to exit any other area in the game."),
   ("tutorial_2_msg_2","Press and hold down the right mouse button to raise your shield. Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
   ("tutorial_2_msg_3","Well done, you've succeeded in defending against an armed opponent.\
- The next phase of this tutorial will pit you and your shield against a force of enemy archers.\
- Move on to the next room when you're ready to face the archers."),
-  ("tutorial_2_msg_4","Defend yourself from arrows by raising your shield with the right mouse button. Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
-  ("tutorial_2_msg_5","Excellent, you've put up a succesful defence against archers.\
+ The next phase of this tutorial will pit you and your shield against a force of enemy soldiers.\
+ Move on to the next room when you're ready to face the soldiers."),
+  ("tutorial_2_msg_4","Defend yourself from blaster bolts by raising your shield with the right mouse button. Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
+  ("tutorial_2_msg_5","Excellent, you've put up a succesful defence against soldiers.\
  There is a reward waiting for you in the next room."),
   ("tutorial_2_msg_6","In the default configuration,\
  the F key on your keyboard is used for non-violent interaction with objects and humans in the gameworld.\
  To pick up the sword on the altar, look at it and press F when you see the word 'Equip'."),
   ("tutorial_2_msg_7","A fine weapon! Now you can use it to deliver a bit of payback.\
- Go back through the door and dispose of the archers you faced earlier."),
-  ("tutorial_2_msg_8","Very good. Your last task before finishing this tutorial is to face the maceman.\
- Go through the door now and show him your steel!"),
+ Go back through the door and dispose of the soldiers you faced earlier."),
+  ("tutorial_2_msg_8","Very good. Your last task before finishing this tutorial is to face the infantry soldiers.\
+ Go through the door now and show him your strength!"),
   ("tutorial_2_msg_9","Congratulations! You have now learned how to defend yourself with a shield and even had your first taste of combat with armed opponents.\
- Give it a bit more practice and you'll soon be a renowned swordsman.\
+ Give it a bit more practice and you'll soon be a renowned warrior.\
  The next tutorial covers directional defence, which is one of the most important elements of Mount&Blade combat.\
  You can press the Tab key at any time to return to the tutorial menu."),
 
@@ -175,8 +175,8 @@ strings = [
  You must watch your opponent carefully and only initiate your parry AFTER the enemy starts to attack.\
  If you start BEFORE he readies an attack, you may parry the wrong way altogether!\
  Now it's time for you to move on to the next room, where you'll have to defend yourself against an armed opponent.\
- Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple quarterstaff.\
- Your quarterstaff's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead.\
+ Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple staff.\
+ Your staff's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead.\
  Move on to the next room when you are ready to initiate the fight."),
   ("tutorial_3_msg_3","Press and hold down the right mouse button to defend yourself with your staff after your opponent starts his attack.\
  Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
@@ -194,22 +194,22 @@ strings = [
   ("tutorial_3_2_msg_2","Defeat your opponent with your quarterstaff."),
   ("tutorial_3_2_msg_3","Excellent. Now the only thing standing in your way is one last opponent.\
  He is in the next room. Move in and knock him down."),
-  ("tutorial_3_2_msg_4","Defeat your opponent with your quarterstaff."),
+  ("tutorial_3_2_msg_4","Defeat your opponent with your staff."),
   ("tutorial_3_2_msg_5","Well done! In this tutorial you have learned how to fight ably without a shield.\
  Train hard and train well, and no one shall be able to lay a stroke on you.\
  In the next tutorial you may learn speeder bike riding and mounted combat.\
  You can press the Tab key at any time to return to the tutorial menu."),
 
   ("tutorial_4_msg_1","Welcome to the fourth tutorial.\
- In this sequence you'll learn about riding a speeder bike and how to perform various martial exercises while riding.\
+ In this sequence you'll learn about riding a speeder bike and how to perform various exercises while riding.\
  We'll start by getting you mounted up.\
  Approach the speeder bike, and press the 'F' key when you see the word 'Mount'."),
   ("tutorial_4_msg_2","While riding, the WASD keys control your speeder bike's movement, not your own.\
  Ride your speeder bike and try to follow the yellow flag around the course.\
  When you reach the flag, it will move to the next waypoint on the course until you reach the finish."),
   ("tutorial_4_msg_3","Very good. Next we'll cover attacking enemies while riding. Approach the yellow flag now."),
-  ("tutorial_4_msg_4","Draw your sword (using the mouse wheel) and destroy the four targets.\
- Try hitting the dummies as you pass them at full speed -- this provides an extra challenge,\
+  ("tutorial_4_msg_4","Draw your weapon (using the mouse wheel) and destroy the four targets.\
+ Try hitting the practice targets as you pass them at full speed -- this provides an extra challenge,\
  but the additional speed added to your blow will allow you to do more damage.\
  The easiest way of doing this is by pressing and holding the left mouse button until the right moment,\
  releasing it just before you pass the target."),
@@ -223,8 +223,8 @@ strings = [
 
   ("tutorial_5_msg_1","TODO: Follow order to the flag"),
   ("tutorial_5_msg_2","TODO: Move to the flag, keep your units at this position"),
-  ("tutorial_5_msg_3","TODO: Move to the flag to get the archers"),
-  ("tutorial_5_msg_4","TODO: Move archers to flag1, infantry to flag2"),
+  ("tutorial_5_msg_3","TODO: Move to the flag to get the soldiers"),
+  ("tutorial_5_msg_4","TODO: Move soldiers to flag1, infantry to flag2"),
   ("tutorial_5_msg_5","TODO: Enemy is charging. Fight!"),
   ("tutorial_5_msg_6","TODO: End of battle."),
 
@@ -277,7 +277,7 @@ strings = [
 ##  ("you_are_in_castle","You are at the castle of "),
 ##  ("you_sneaked_into_town","You have sneaked into the town of "),
 
-  ("town_nighttime"," It is late at night and honest folk have abandoned the streets."),
+  ("town_nighttime"," It is late at night and most citizens have abandoned the streets."),
   ("door_locked","The door is locked."),
   ("spacestation_is_abondened","The planet seems to be unoccupied."),
   ("town_is_abondened","The planet has no garrison defending it."),
@@ -310,15 +310,15 @@ strings = [
   # ("attack_walls_continue", "A bloody battle ensues and both sides fight with equal valour. Despite the efforts of your troops, the castle remains in enemy hands."),
   ("attack_walls_success", "After a bloody fight, your brave soldiers manage to take control of the planet from the enemy."),
   ("attack_walls_failure", "Your soldiers fall in waves as they charge the command center, and the few who remain alive soon rout and run away, never to be seen again."),
-  ("attack_walls_continue", "A bloody battle ensues and both sides fight with equal valour. Despite the efforts of your troops, the planet remains in enemy hands."),  
+  ("attack_walls_continue", "A bloody battle ensues and both sides fight aggressively. Despite the efforts of your troops, the planet remains in enemy hands."),  
 
   ("order_attack_success", "Your men fight bravely and defeat the enemy."),
-  ("order_attack_failure", "You watch the battle in despair as the enemy cuts your soldiers down, then easily drives off the few ragged survivors."),
-  ("order_attack_continue", "Despite an extended skirmish, your troops were unable to win a decisive victory."),
+  ("order_attack_failure", "You watch the battle in despair as the enemy destroys your soldiers, then easily overwhelms the few remaining survivors."),
+  ("order_attack_continue", "Despite an extended battle, your troops were unable to win a decisive victory."),
 
   ("join_order_attack_success", "Your men fight well alongside your allies, sharing in the glory as your enemies are beaten."),
-  ("join_order_attack_failure", "You watch the battle in despair as the enemy cuts your soldiers down, then easily drives off the few ragged survivors."),
-  ("join_order_attack_continue", "Despite an extended skirmish, neither your troops nor your allies were able to win a decisive victory over the enemy."),
+  ("join_order_attack_failure", "You watch the battle in despair as the enemy destroys your soldiers, then easily overwhelms the few remaining survivors."),
+  ("join_order_attack_continue", "Despite an extended battle, neither your troops nor your allies were able to win a decisive victory over the enemy."),
 
   ("siege_defender_order_attack_success", "The men of the garrison hold their walls with skill and courage, breaking the enemy assault and skillfully turning the defeat into a full-fledged rout."),
   ("siege_defender_order_attack_failure", "The assault quickly turns into a bloodbath. Valiant efforts are for naught; the overmatched garrison cannot hold the walls, and the enemy puts every last defender to the sword."),
@@ -474,15 +474,15 @@ strings = [
   
 
 # meet_spy_in_enemy_town quest secret sentences
-  ("secret_sign_1",  "The armoire dances at midnight..."),
-  ("secret_sign_2",  "I am selling these fine Khergit tapestries. Would you like to buy some?"),
-  ("secret_sign_3",  "The friend of a friend sent me..."),
-  ("secret_sign_4",  "The wind blows hard from the east and the river runs red..."),
+  ("secret_sign_1",  "Do you want to go to Tosche Station to pick up some power converters?"),
+  ("secret_sign_2",  "Can you speak Bocce?"),
+  ("secret_sign_3",  "What is the possibility of successfully navigating an asteroid field?"),
+  ("secret_sign_4",  "What do you know about Mos Eisley Cantina?"),
   
-  ("countersign_1",  "But does he dance for the dresser or the candlestick?"),
-  ("countersign_2",  "Yes I would, do you have any in blue?"),
-  ("countersign_3",  "But, my friend, your friend's friend will never have a friend like me."),
-  ("countersign_4",  "Have you been sick?"),
+  ("countersign_1",  "No, I can't waste time with that until my chores are done"),
+  ("countersign_2",  "Of course I can, sir. It’s like a second language to me."),
+  ("countersign_3",  "Approximately three thousand seven hundred and twenty to one."),
+  ("countersign_4",  "You will never find a more wretched hive of scum and villainy. You must be cautious."),
 
 #SW - modified random names
 # Names  
@@ -572,59 +572,59 @@ strings = [
   ("quest_log_updated", "Quest log has been updated..."),
 
   ("banner_selection_text", "You have been awarded the right to carry a banner.\
- Your banner will signify your status and bring you honour. Which banner do you want to choose?"),
+ Your banner will signify your status and bring you honor. Which banner do you want to choose?"),
 
 
 # Retirement Texts: s7=village name; s8=castle name; s9=town name
   ("retirement_text_1", "Only too late do you realise that your money won't last.\
  It doesn't take you long to fritter away what little you bothered to save,\
  and you fare poorly in several desperate attempts to start adventuring again.\
- You end up a beggar in {s9}, living on alms and the charity of the church."),
+ You end up a beggar in {s9}, living on a few credits and the charity of the church."),
   ("retirement_text_2", "Only too late do you realise that your money won't last.\
  It doesn't take you long to fritter away what little you bothered to save.\
  Once every credit has evaporated in your hands you are forced to start a life of crime in the backstreets of {s9},\
- using your skills to eke out a living robbing coppers from women and poor citizens."),
+ using your skills to eke out a living robbing credits from women and poor citizens."),
   ("retirement_text_3", "Only too late do you realise that your money won't last.\
  It doesn't take you long to fritter away what little you bothered to save,\
- and you end up a penniless drifter, going from cantina to cantina\
+ and you end up a poor drifter, going from cantina to cantina\
  blagging drinks from indulgent patrons by regaling them with war stories that no one ever believes."),
   ("retirement_text_4", "The credits you've saved doesn't last long,\
  but you manage to put together enough to buy some land near the planet of {s7}.\
  There you become a free farmer, and you soon begin to attract potential {wives/husbands}.\
  In time the villagers come to treat you as their local hero.\
- You always receive a place of honour at feasts, and your exploits are told and retold in the pubs and cantinas\
+ You always receive a place of honor at feasts, and your exploits are told and retold in the pubs and cantinas\
  so that the children may keep a memory of you for ever and ever."),
-  ("retirement_text_5", "The silver you've saved doesn't last long,\
+  ("retirement_text_5", "The credits you've saved doesn't last long,\
  but it's enough to buy a small cantina in {s9}. Although the locals are wary of you at first,\
  they soon accept you into their midst. In time your growing cantina becomes a popular feasthall and meeting place.\
  People come for miles to eat or stay there due to your sheer renown and the epic stories you tell of your adventuring days."),
   ("retirement_text_6", "You've saved wisely throughout your career,\
- and now your silver and your intelligence allow you to make some excellent investments to cement your future.\
+ and now your credits and your intelligence allow you to make some excellent investments to cement your future.\
  After buying several shops and warehouses in {s9}, your shrewdness turns you into one of the most prominent merchants on the planet,\
  and you soon become a wealthy {man/woman} known as much for your trading empire as your exploits in battle."),
   ("retirement_text_7", "As a landed noble, however minor, your future is all but assured.\
  You settle in your holdfast at {s7}, administrating the planet,\
- adjudicating the local courts and fulfilling your obligations to your liege lord.\
- Occasionally your liege calls you to muster and command in his campaigns, but these stints are brief,\
+ adjudicating the local courts and fulfilling your obligations to your leader.\
+ Occasionally your leader calls you to assist and command allies in his campaigns, but these stints are brief,\
  and you never truly return to the adventuring of your younger days. You have already made your fortune.\
  With your own hall and holdings, you've few wants that your personal wealth and the income of your lands cannot afford you."),
   ("retirement_text_8", "There is no question that you've done very well for yourself.\
  Your extensive holdings and adventuring wealth are enough to guarantee you a rich and easy life for the rest of your days.\
- Retiring to your noble seat in {s8}, you exchange adventure for politics,\
- and you soon establish yourself as a considerable power in your liege lord's faction.\
- With intrigue to busy yourself with, your own forests to hunt, a hall to feast in and a hundred fine war stories to tell,\
+ Retiring to your planet on {s8}, you exchange adventure for politics,\
+ and you soon establish yourself as a considerable power in your leader's faction.\
+ With intrigue to busy yourself with, your own lands to hunt, a hall to feast in and a hundred fine war stories to tell,\
  you have little trouble making the best of the years that follow."),
   ("retirement_text_9", "As a reward for your competent and loyal service,\
- your liege lord decrees that you be given a hereditary title, joining the major nobility of the realm.\
- Soon you complete your investitute as baron of {s7}, and you become one of your liege's close advisors\
- and adjutants. Your renown garners you much subtle pull and influence as well as overt political power.\
- Now you spend your days playing the games of power, administering your great fiefs,\
+ your liege lord decrees that you be given a hereditary title, joining the major leaders of the realm.\
+ Soon you complete your investitute as ruler of {s7}, and you become one of your leader's close advisors\
+ and allies. Your renown garners you much subtle pull and influence as well as overt political power.\
+ Now you spend your days playing the games of power, administering your great planets,\
  and recounting the old times of adventure and glory."),
-  ("retirement_text_10", "Though you started from humble beginnings, your liege lord holds you in high esteem,\
- and a ripple of shock passes through the realm when he names you to the hereditary title of {count/countess} of {s9}.\
- Vast fiefs and fortunes are now yours to rule. You quickly become your liege's most trusted advisor,\
+  ("retirement_text_10", "Though you started from humble beginnings, your leader holds you in high esteem,\
+ and a ripple of shock passes through the realm when he names you to the hereditary title of {ruler/ruler} of {s9}.\
+ Vast planets and investments are now yours to rule. You quickly become your leader's most trusted advisor,\
  almost his equal and charged with much of the running of his realm,\
- and you sit a throne in your own splendourous palace as one of the most powerful figures in the Galaxy."),
+ and you sit upon a place of honor as one of the most powerful figures in the Galaxy."),
 
 
 #NPC companion changes begin
@@ -647,15 +647,15 @@ strings = [
 # chivalric
   ("surrender", "surrender to the enemy"), ##Done - game menus
   ("flee_battle", "run from battle"), ##Done - game menus
-  ("pay_bandits", "pay off common bandits"),
+  ("pay_bandits", "pay off bandits"),
 
 # honest
-  ("fail_quest", "fail a quest which we undertook on word of honour"),
+  ("fail_quest", "fail a quest which we undertook on word of honor"),
 
 # quest-related strings
   ("squander_money", "squander money given to us in trust"),
   ("murder_merchant", "involve ourselves in cold-blooded murder"),
-  ("round_up_serfs", "round up serfs on behalf of some noble"),
+  ("round_up_serfs", "round up servants on behalf of some commander"),
 
 
 # Fates suffered by companions in battle
@@ -1194,12 +1194,12 @@ strings = [
   ("npc1_rehire_speech", "Boss -- it's good to see you again. I know we had our differences in the past, but to tell you the truth, those were some of the best days I've known. And, to tell you the truth, I've had a bit of difficulty finding work. Listen, if you'd be willing to have me back, I'd be willing to sign up with your company again."),
   ("npc2_rehire_speech", "{Sir/Madame}! It's good to see you again. But I'll confess -- I've been looking for you. I bought a load of goods like I told you I would, loaded them up, and took them back across the steppe -- but wouldn't you know it, I was hit again by Khergits, and lost it all. I guess I'm just destined to fight for my fortune. Also, people tell me that you've done very well for yourself. So tell me, {sir/madame}, would you have me back?"),
   ("npc3_rehire_speech", "Well, hello {sir/madame}! It is very good to see you again. I have not fared so well since we parted, I am afraid. My mother's family. whom I hoped would give me a start in trading, have not been as welcoming as I have hoped. I receive nothing but lectures from my aunts, on how I have ruined my prospects for marriage by taking service in a mercenary company. Perhaps I am better suited to war than to commerce, to share a meal over a campfire with rough fellows than to drink wine with the burghers of Veluca. {Sir/Madame}, I must ask you -- will you take me back?"),
-  ("npc4_rehire_speech", "Why hello, captain. It's been a while. You've done well for yourself, I hear. For my part, I've been having some difficulties coaxing a living from my estates -- locusts, bad rains, unruly serfs, that sort of thing. I thought I might take up the sword once more. I know there's been some bad blood between us, but I'd be honoured to fight in your ranks once again."),
+  ("npc4_rehire_speech", "Why hello, captain. It's been a while. You've done well for yourself, I hear. For my part, I've been having some difficulties coaxing a living from my estates -- locusts, bad rains, unruly servants, that sort of thing. I thought I might take up the sword once more. I know there's been some bad blood between us, but I'd be honoured to fight in your ranks once again."),
   ("npc5_rehire_speech", "{playername} Bahadur! Your fame grows ever greater -- even as far as my homeland, beyond the mountains. I'd returned there, hoping that the Khan's men had forgotten. Well, they had not -- even before I set foot in my valley, I had word from my family that both the Khan and the Humyan were looking for me. So I came back again, hoping you might forget any harsh words I had spoken, to see if I could fight with you once again."),
   ("npc6_rehire_speech", "It is good to see you, {sir/madame}. Everywhere I go, men are in awe of your deeds. I have not had it so well since I left. Wherever I go, I feel my demons returning. My soul is in turmoil. For reasons that I cannot fully explain, I had found peace in your company, even if I had questions about your leadership. Will you allow me to serve with you once again?"),
   ("npc7_rehire_speech", "Captain! It is good to see you. Forgive what I may have said when we parted. I took a ship out of Wercheg, bound for the east, but it was taken by pirates and after my ransom I was set ashore back here. There may be better places in the world than that planet, but I have yet to see them. So I think, if it is my lot to live here, then your company is as good a livelihood as any. Will you have me back?"),
   ("npc8_rehire_speech", "Greetings to you, {playername}. I was wondering if the harsh words spoken between us in the past could be forgotten. I have been hunting among the Nords here, to see if I could find enough men to take back my husband's hall. But I could not find enough men to crew a longship, and those whom I gathered quickly got bored and wandered off -- not, I will add, before they drank away such gold as I had accumulated. So I thought back to the battles we fought together. Those were good days, and profitable ones too."),
-  ("npc9_rehire_speech", "My dear, dear {man/lady}! So good it is to see you! I have sought service with the lords of this land, but have been most grieviously disappointed. Half of them ask me to collect debts from fellow lords, as though I were a banker's errand boy, or chase down his serfs, as though I were a farm overseer. One even asked me to murder one of his creditors! I have looked for you, to see if you would wish me to join you again."), #Alayen
+  ("npc9_rehire_speech", "My dear, dear {man/lady}! So good it is to see you! I have sought service with the lords of this land, but have been most grieviously disappointed. Half of them ask me to collect debts from fellow lords, as though I were a banker's errand boy, or chase down his servants, as though I were a farm overseer. One even asked me to murder one of his creditors! I have looked for you, to see if you would wish me to join you again."), #Alayen
   ("npc10_rehire_speech", "Captain! It's good to see you. You see, it turns out I'm not much of a farmer. Too soft on the hired hands, I figure. I let them rob me blind. I guess fighting is what I know best. So tell me, captain, are you still looking for good men?"),
   ("npc11_rehire_speech", "Captain! So good to see you! People say that you've been making gold hand over foot. I'm a fidgety old bag of bones, I'll admit. I left you because I wasn't satisfied with the warrior's life, but I spend a bit of time on planet and I realize that there's worse things in life than a full belly, honest companions, and the joy of seeing the enemy run before you. So, would you be hiring again"),
   ("npc12_rehire_speech", "Captain! It's a fine thing to see an honest face like yours. This world is full of lies. I went home to publish my findings, hired some scribes and made a handful of codices, and waited for the commissions. But it turns out that the universities don't care about real medical knowledge rather than warmed-over Galerian. And publishers -- let me tell you, you never saw anyone so unscrupulous. They rent the books out chapter to by chapter to students to copy, but half of them aren't returned, and those that are have pages soaked in wine, and there's no longer a complete copy of my work anywhere. I'll keep trying, but first I need a bit of money in my pocket, first. Are you looking for a surgeon?"),
@@ -1293,19 +1293,19 @@ strings = [
   ("npc18_home_recap", "I am a robot."),  
   
   ("npc1_honorific", "boss"), #Borcha
-  ("npc2_honorific", "{sir/madame}"), #marnid
-  ("npc3_honorific", "{sir/madame}"),
-  ("npc4_honorific", "{sir/madame}"),
-  ("npc5_honorific", "{playername} Bahadur"), #beheshtur
+  ("npc2_honorific", "{sir/sir}"), #marnid
+  ("npc3_honorific", "{sir/sir}"),
+  ("npc4_honorific", "{sir/sir}"),
+  ("npc5_honorific", "{playername}"), #beheshtur
   ("npc6_honorific", "captain"), #firentis
   ("npc7_honorific", "captain"), #deshavi
   ("npc8_honorific", "{playername}"), #matheld
-  ("npc9_honorific", "{my good sir/my good lady}"), #Alayen
-  ("npc10_honorific", "{Brother/Sister}"), #Bunduk
-  ("npc11_honorific", "{laddie/lassie} -- I mean Captain"), #katrin
+  ("npc9_honorific", "{sir/sir}"), #Alayen
+  ("npc10_honorific", "boss"), #Bunduk
+  ("npc11_honorific", "{sir/sir} -- I mean Captain"), #katrin
   ("npc12_honorific", "captain"),
-  ("npc13_honorific", "oh valorous one"), #nizar
-  ("npc14_honorific", "commander"), #lazalit
+  ("npc13_honorific", "captain"), #nizar
+  ("npc14_honorific", "captain"), #lazalit
   ("npc15_honorific", "captain"), #artimenner
   ("npc16_honorific", "captain"), #klethi
   #SW - new droid NPC's (copied personlity from npc6)
@@ -1355,47 +1355,47 @@ strings = [
   ("comment_you_raided_my_minorplanet_enemy_spiteful",      "You have raided the planet of {s51}, destroying my property and killing some citizens. I will take my compensation in blood!"), 
   ("comment_you_raided_my_minorplanet_enemy_coldblooded",   "You have raided the planet of {s51}, destroying my property and killing some citizens. I will make you think twice before you disrupt my revenues like that again."), 
   ("comment_you_raided_my_minorplanet_enemy",               "You have raided the planet of {s51}, destroying my property and killing citizens under my protection. You will pay the price for your crime!"), 
-  ("comment_you_raided_my_minorplanet_unfriendly_spiteful", "You have raided the planet of {s51}. Do it again and I'll gut you like a fish."),
+  ("comment_you_raided_my_minorplanet_unfriendly_spiteful", "You have raided the planet of {s51}. Do it again and I'll gut you like a tauntaun."),
   ("comment_you_raided_my_minorplanet_friendly",            "You have raided the planet of {s51}. This will place a grave strain on our friendship."),
-  ("comment_you_raided_my_minorplanet_default",             "You have raided the planet of {s51}. If you continue to behave this way, we may soon come to blows."),
+  ("comment_you_raided_my_minorplanet_default",             "You have raided the planet of {s51}. If you continue to behave this way, we will become enemies."),
 
   ("comment_you_robbed_my_minorplanet_enemy_coldblooded", "You have robbed the citizens on the planet of {s51}. I take that as a personal insult."), 
   ("comment_you_robbed_my_minorplanet_enemy",             "You have robbed innocent farmers under my protection on the planet of {s51}.  I will punish you for your misdeeds!"), 
-  ("comment_you_robbed_my_minorplanet_friendly_spiteful", "I have heard that you pinched some food from the citizens on {s51}. Well, I'll not begrudge you a scrap or two, but keep in mind that I'm the one who must listen to their whining afterward."),
+  ("comment_you_robbed_my_minorplanet_friendly_spiteful", "I have heard that you stole some food from the citizens on {s51}. Well, I'll not fight you over a scrap or two, but keep in mind that I'm the one who must listen to their complaining afterward."),
   ("comment_you_robbed_my_minorplanet_friendly",          "I have heard that you requisitioned supplies from the citizens on {s51}. I am sure that you would not have done so were you not desperately in need."),
-  ("comment_you_robbed_my_minorplanet_default",           "You have robbed the citizens on the planet of {s51}. If you continue to behave this way, we may soon come to blows."),
+  ("comment_you_robbed_my_minorplanet_default",           "You have robbed the citizens on the planet of {s51}. If you continue to behave this way, we may soon become enemies."),
 
-  ("comment_you_accosted_my_caravan_enemy",          "You have been accosting caravans under my protection. But your trail of brigandage will soon come to an end."),
-  ("comment_you_accosted_my_caravan_default",        "You have been accosting caravans under my protection. This sort of behavior must stop."),
+  ("comment_you_accosted_my_caravan_enemy",          "You have been attacking caravans under my protection. But your trail of thievery will soon come to an end."),
+  ("comment_you_accosted_my_caravan_default",        "You have been attacking caravans under my protection. This sort of behavior must stop."),
 
-  ("comment_you_helped_villagers_benevolent",                "I heard that you gave charity to the citizens on the planet of {s51}. I had been neglectful in my duties as lord and protector, and I appreciate what you have done."),
-  ("comment_you_helped_villagers_friendly_cruel",            "I heard that you gave charity to the citizens on the planet of {s51}. I appreciate that you meant well, but I'd rather you not undercut my authority like that."),
-  ("comment_you_helped_villagers_friendly",                  "I heard that you gave charity to the citizens on the planet of {s51}. Times are hard, and I know that you mean well, so I will not object to you providing them with assistance."),
-  ("comment_you_helped_villagers_unfriendly_spiteful",       "I heard that you gave charity to the citizens on the planet of {s51}. As amusing as it is to see you grubbing for favor among my commanders, I would ask you to mind your own business."),
-  ("comment_you_helped_villagers_cruel",                     "I heard that you gave charity to the citizens on the planet of {s51}. As the colonists' lord and protector, it is most properly my duty to assist them in times of hardship. You may mean well, but your actions still undercut my authority. I would thank you to leave them alone."),
-  ("comment_you_helped_villagers_default",                   "I heard that you gave charity to the citizens on the planet of {s51}. Times are hard, and I know that you mean well, but try not to make a habit of it. I am their lord and protector, and I would rather not have them go looking to strangers for assistance."),
+  ("comment_you_helped_villagers_benevolent",                "I heard that you gave assistance to the citizens on the planet of {s51}. I had been neglectful in my duties as commander, and I appreciate what you have done."),
+  ("comment_you_helped_villagers_friendly_cruel",            "I heard that you gave assistance to the citizens on the planet of {s51}. I appreciate that you meant well, but I'd rather you not undercut my authority like that."),
+  ("comment_you_helped_villagers_friendly",                  "I heard that you gave assistance to the citizens on the planet of {s51}. Times are hard, and I know that you mean well, so I will not object to you providing them with assistance."),
+  ("comment_you_helped_villagers_unfriendly_spiteful",       "I heard that you gave assistance to the citizens on the planet of {s51}. As amusing as it is to see you grubbing for favor among my commanders, I would ask you to mind your own business."),
+  ("comment_you_helped_villagers_cruel",                     "I heard that you gave assistance to the citizens on the planet of {s51}. As the citizens commander, it is most properly my duty to assist them in times of hardship. You may mean well, but your actions still undercut my authority. I would thank you to leave them alone."),
+  ("comment_you_helped_villagers_default",                   "I heard that you gave assistance to the citizens on the planet of {s51}. Times are hard, and I know that you mean well, but try not to make a habit of it. I am their commander, and I would rather not have them go looking to strangers for assistance."),
 
 
 #Combat-related events
 
 
-  ("comment_you_captured_a_spacestation_allied_friendly",            "I heard that you have besieged and taken {s51}. That was a great dead, and I am proud to call you my friend!"), 
-  ("comment_you_captured_a_spacestation_allied_spiteful",            "I heard that you have besieged and taken {s51}. Good work! Soon, we will have all their fortresses to despoil, their treasuries to ransack, their grieving widows to serve us our wine."), 
-  ("comment_you_captured_a_spacestation_allied_unfriendly_spiteful", "I heard that you have besieged and taken {s51}. Well, every dog has his day, or so they say. Enjoy it while you can, until your betters kick you back out in the cold where you belong."), 
+  ("comment_you_captured_a_spacestation_allied_friendly",            "I heard that you have besieged and taken {s51}. That was a great victory, and I am proud to call you my friend!"), 
+  ("comment_you_captured_a_spacestation_allied_spiteful",            "I heard that you have besieged and taken {s51}. Good work! Soon, we will have all their resources, their credits, and servants to serve us our wine."), 
+  ("comment_you_captured_a_spacestation_allied_unfriendly_spiteful", "I heard that you have besieged and taken {s51}. Well, I guess you got lucky. Enjoy it while you can, until another commander destroys you like I expect they will."), 
   ("comment_you_captured_a_spacestation_allied_unfriendly",          "I heard that you have besieged and taken {s51}. Whatever our differences in the past, I must offer you my congratulations."), 
   ("comment_you_captured_a_spacestation_allied",                     "I heard that you have besieged and taken {s51}. We have them on the run!"), 
 
-  ("comment_you_captured_my_spacestation_enemy_spiteful",            "I hear that you have broken into my home at {s51}. I hope the dungeon is to your liking, as you will be spending much time there in the years to come."),
-  ("comment_you_captured_my_spacestation_enemy_chivalrous",          "You hold {s51}, my rightful fief. I hope you will give me the chance to win it back!"),
-  ("comment_you_captured_my_spacestation_enemy",                     "You have something that belongs to me -- {s51}. I will make you relinquish it."),
+  ("comment_you_captured_my_spacestation_enemy_spiteful",            "I hear that you have broken into my home at {s51}. I hope the prison is to your liking, as you will be spending much time there in the years to come."),
+  ("comment_you_captured_my_spacestation_enemy_chivalrous",          "You hold {s51}, my rightful planet. I hope you will give me the chance to win it back!"),
+  ("comment_you_captured_my_spacestation_enemy",                     "You have something that belongs to me -- {s51}. I will make you return it."),
 
 ###Add some variation to these
   ("comment_we_defeated_a_lord_unfriendly_spiteful",           "I suppose you will want to drink to the memory of our victory over {s54}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces."), 
   ("comment_we_defeated_a_lord_unfriendly",                    "I will not forget how we fought together against {s54}, but I can also not forget the other matters that lie between us."), 
-  ("comment_we_defeated_a_lord_cruel",                         "That was a great victory over {s54}, wasn't it? We made of his army a feast for the crows!"), 
-  ("comment_we_defeated_a_lord_quarrelsome",                   "I won't forget how we whipped {s54}? I enjoyed that."), 
-  ("comment_we_defeated_a_lord_upstanding",                    "I will not forget our victory over {s54}. Let us once again give thanks to heaven, and pray that we not grow too proud."), 
-  ("comment_we_defeated_a_lord_default",                       "That was a great victory over {s54}, wasn't it? I am honoured to have fought by your side."), 
+  ("comment_we_defeated_a_lord_cruel",                         "That was a great victory over {s54}, wasn't it? We destroyed his army with ease!"), 
+  ("comment_we_defeated_a_lord_quarrelsome",                   "I won't forget how we destroyed {s54}? I enjoyed that."), 
+  ("comment_we_defeated_a_lord_upstanding",                    "I will not forget our victory over {s54}. Let us once again give thanks to our leader and allies."), 
+  ("comment_we_defeated_a_lord_default",                       "That was a great victory over {s54}, wasn't it? I am honored to have fought by your side."), 
 
   ("comment_we_fought_in_siege_unfriendly_spiteful",           "I suppose you will want to drink to the memory of our capture of {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces."), 
   ("comment_we_fought_in_siege_unfriendly",                    "I will not forget how we together we stormed {s51}, but I can also not forget the other matters that lie between us."), 
@@ -1498,41 +1498,41 @@ strings = [
 
 
 #Internal faction events
-  ("comment_pledged_allegiance_allied_martial_unfriendly",             "I heard that you have pledged allegiance to our lord, {s54}. Pray do not disgrace us by behaving in a cowardly fashion."),
-  ("comment_pledged_allegiance_allied_martial",                        "I heard that you have pledged allegiance to our lord, {s54}. I look forward to fighting alongside you against our foes."),
-  ("comment_pledged_allegiance_allied_quarrelsome_unfriendly",         "I heard that you have pledged allegiance to our lord, {s54}. Bah. Do yourself a favor, and stay out of my way."),
-  ("comment_pledged_allegiance_allied_quarrelsome",                    "I heard that you have pledged allegiance to our lord, {s54}. Fight hard against our foes, respect your betters, and don't cross me, and we'll get along fine."),
-  ("comment_pledged_allegiance_allied_selfrighteous_unfriendly",       "I heard that you have pledged allegiance to our lord, {s54}. If I were he, I would not trust you to clean the sculleries."),
-  ("comment_pledged_allegiance_allied_selfrighteous",                  "I heard that you have pledged allegiance to our lord, {s54}. Fight bravely and you will be well-rewarded. Betray us, and we shall make of you the kind of example that will not soon be forgotten."),
-  ("comment_pledged_allegiance_allied_cunning_unfriendly",             "I heard that you have pledged allegiance to our lord, {s54}. I do not pretend to be happy about his decision, but perhaps it is better to have you inside our tent pissing out, than the other way around."),
-  ("comment_pledged_allegiance_allied_cunning",                        "I heard that you have pledged allegiance to our lord, {s54}. That is good. The more skilled fighters we have with us in these troubled times, the better. I shall be watching your progress."),
-  ("comment_pledged_allegiance_allied_debauched_unfriendly",           "I heard that you have pledged allegiance to our lord, {s54}. No doubt you will soon betray him, and I will have the pleasure of watching you die a traitor's death."),
-  ("comment_pledged_allegiance_allied_debauched",                      "I heard that you have pledged allegiance to our lord, {s54}. Excellent... I am sure that you and I will become very good friends. But remember -- if you betray us, it will be the biggest mistake you will ever make."),
-  ("comment_pledged_allegiance_allied_goodnatured_unfriendly",         "I heard that you have pledged allegiance to our lord, {s54}. Well, I can't say that I would have trusted you, but perhaps you deserve the benefit of the doubt."),
-  ("comment_pledged_allegiance_allied_goodnatured",                    "I heard that you have pledged allegiance to our lord, {s54}. Good {man/woman}! Our lord is a noble soul, and rewards loyalty and valor with kindness and generosity."),
-  ("comment_pledged_allegiance_allied_upstanding_unfriendly",          "I heard that you have pledged allegiance to our lord, {s54}. Alas, from what I know of you I fear that you will disgrace us, but I will be happy if you prove me wrong."),
-  ("comment_pledged_allegiance_allied_upstanding",                     "I heard that you have pledged allegiance to our lord, {s54}. Fight against our foes with valor, but also with honour and compassion. A good name is as valuable as a sharp sword or a swift speeder in affairs of arms."),
+  ("comment_pledged_allegiance_allied_martial_unfriendly",             "I heard that you have pledged allegiance to our leader, {s54}. Pray do not disgrace us by behaving in a cowardly fashion."),
+  ("comment_pledged_allegiance_allied_martial",                        "I heard that you have pledged allegiance to our leader, {s54}. I look forward to fighting alongside you against our foes."),
+  ("comment_pledged_allegiance_allied_quarrelsome_unfriendly",         "I heard that you have pledged allegiance to our leader, {s54}. Bah. Do yourself a favor, and stay out of my way."),
+  ("comment_pledged_allegiance_allied_quarrelsome",                    "I heard that you have pledged allegiance to our leader, {s54}. Fight hard against our foes, respect your betters, and don't cross me, and we'll get along fine."),
+  ("comment_pledged_allegiance_allied_selfrighteous_unfriendly",       "I heard that you have pledged allegiance to our leader, {s54}. If I were he, I would not trust you to clean the sculleries."),
+  ("comment_pledged_allegiance_allied_selfrighteous",                  "I heard that you have pledged allegiance to our leader, {s54}. Fight bravely and you will be well-rewarded. Betray us, and we shall make of you the kind of example that will not soon be forgotten."),
+  ("comment_pledged_allegiance_allied_cunning_unfriendly",             "I heard that you have pledged allegiance to our leader, {s54}. I do not pretend to be happy about his decision, but perhaps it is better to have you inside our tent pissing out, than the other way around."),
+  ("comment_pledged_allegiance_allied_cunning",                        "I heard that you have pledged allegiance to our leader, {s54}. That is good. The more skilled fighters we have with us in these troubled times, the better. I shall be watching your progress."),
+  ("comment_pledged_allegiance_allied_debauched_unfriendly",           "I heard that you have pledged allegiance to our leader, {s54}. No doubt you will soon betray him, and I will have the pleasure of watching you die a traitor's death."),
+  ("comment_pledged_allegiance_allied_debauched",                      "I heard that you have pledged allegiance to our leader, {s54}. Excellent... I am sure that you and I will become very good friends. But remember -- if you betray us, it will be the biggest mistake you will ever make."),
+  ("comment_pledged_allegiance_allied_goodnatured_unfriendly",         "I heard that you have pledged allegiance to our leader, {s54}. Well, I can't say that I would have trusted you, but perhaps you deserve the benefit of the doubt."),
+  ("comment_pledged_allegiance_allied_goodnatured",                    "I heard that you have pledged allegiance to our leader, {s54}. Good {man/woman}! Our leader is a intellegent commander, and rewards loyalty and valor with kindness and generosity."),
+  ("comment_pledged_allegiance_allied_upstanding_unfriendly",          "I heard that you have pledged allegiance to our leader, {s54}. Alas, from what I know of you I fear that you will disgrace us, but I will be happy if you prove me wrong."),
+  ("comment_pledged_allegiance_allied_upstanding",                     "I heard that you have pledged allegiance to our leader, {s54}. Fight against our foes with valor, but also with honour and compassion. A good name is as valuable as a sharp sword or a swift speeder in affairs of arms."),
 
 
-  ("comment_our_king_granted_you_a_fief_allied_friendly_cruel",     "I heard that {s54} granted you {s51} as a fief. Don't forget -- spare the whip and spoil the peasant!"),
-  ("comment_our_king_granted_you_a_fief_allied_friendly_cynical",   "I heard that {s54} granted you {s51} as a fief. I am glad to see you prosper -- but be careful. Men are vipers, envious and covetous of their neighbours' wealth. Stay close to me, and I'll watch your back."),
+  ("comment_our_king_granted_you_a_fief_allied_friendly_cruel",     "I heard that {s54} granted you {s51} as a planet. Don't forget -- spare the whip and spoil the peasant!"),
+  ("comment_our_king_granted_you_a_fief_allied_friendly_cynical",   "I heard that {s54} granted you {s51} as a planet. I am glad to see you prosper -- but be careful. Men are vipers, envious and covetous of their neighbours' wealth. Stay close to me, and I'll watch your back."),
 
-  ("comment_our_king_granted_you_a_fief_allied_friendly",              "I heard that {s54} granted you {s51} as a fief. May your new lands prosper."),
-  ("comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding", "I heard that {s54} granted you {s51} as a fief. But keep in mind that pride goes before a fall."),
-  ("comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful",   "I heard that {s54} granted you {s51} as a fief. I suspect, however, that fortune is only raising you up so as to humble you even more, when it casts you back into the dung from whence you came."),
-  ("comment_our_king_granted_you_a_fief_allied_spiteful",              "I heard that {s54} granted you {s51} as a fief. Let's hope you are indeed deserving of our lord's favor."),
+  ("comment_our_king_granted_you_a_fief_allied_friendly",              "I heard that {s54} granted you {s51} as a planet. May your new lands prosper."),
+  ("comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding", "I heard that {s54} granted you {s51} as a planet. But keep in mind that pride goes before a fall."),
+  ("comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful",   "I heard that {s54} granted you {s51} as a planet. I suspect, however, that fortune is only raising you up so as to humble you even more, when it casts you back into the dung from whence you came."),
+  ("comment_our_king_granted_you_a_fief_allied_spiteful",              "I heard that {s54} granted you {s51} as a planet. Let's hope you are indeed deserving of our leader's favor."),
 
-  ("comment_our_king_granted_you_a_fief_allied",                       "I heard that {s54} granted you {s51} as a fief. You seem to be doing very well for yourself."),
+  ("comment_our_king_granted_you_a_fief_allied",                       "I heard that {s54} granted you {s51} as a planet. You seem to be doing very well for yourself."),
 
-  ("comment_you_renounced_your_alliegance_enemy_friendly",             "I heard that you renounced your allegiance to our lord, {s54}. It grieves me that we must now meet on the field of battle."),
-  ("comment_you_renounced_your_alliegance_friendly",                   "I heard that you renounced your allegiance to our lord, {s54}. Let us pray that we may not come to blows."),
+  ("comment_you_renounced_your_alliegance_enemy_friendly",             "I heard that you renounced your allegiance to our leader, {s54}. It grieves me that we must now meet on the field of battle."),
+  ("comment_you_renounced_your_alliegance_friendly",                   "I heard that you renounced your allegiance to our leader, {s54}. Let us pray that we may not come to blows."),
   ("comment_you_renounced_your_alliegance_unfriendly_spiteful",        "I always had you figured for a traitor to {s54}, and now it seems I was proven right. I hope you are prepared to die a traitor's death!"),
-  ("comment_you_renounced_your_alliegance_unfriendly_moralizing",      "I heard that you renounced your allegiance to our lord, {s54}. I am forced to consider you a traitor."),
-  ("comment_you_renounced_your_alliegance_enemy",                      "I heard that you renounced your allegiance to our lord, {s54}. Well, it is the way of the world for old comrades to become enemies."),
-  ("comment_you_renounced_your_alliegance_default",                    "I heard that you renounced your allegiance to our lord, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield."),
+  ("comment_you_renounced_your_alliegance_unfriendly_moralizing",      "I heard that you renounced your allegiance to our leader, {s54}. I am forced to consider you a traitor."),
+  ("comment_you_renounced_your_alliegance_enemy",                      "I heard that you renounced your allegiance to our leader, {s54}. Well, it is the way of the world for old comrades to become enemies."),
+  ("comment_you_renounced_your_alliegance_default",                    "I heard that you renounced your allegiance to our leader, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield."),
 
 
-  ("personality_archetypes",   "liege"),
+  ("personality_archetypes",   "leader"),
   ("martial",                  "martial"),
   ("quarrelsome",              "bad-tempered"),
   ("selfrighteous",            "pitiless"),
@@ -1546,7 +1546,7 @@ strings = [
   ("surrender_demand_quarrelsome",    "I've got you cornered. Give up, or I'll ride you down like a dog."),
   ("surrender_demand_pitiless",       "You cannot defeat me, and I'll teach you a painful lesson if you try. Yield!"),
   ("surrender_demand_cunning",        "You are outmatched today. Give up -- if not for your own sake, then think of your men!"),
-  ("surrender_demand_sadistic",       "Surrender or I'll gut you like a fish!"),
+  ("surrender_demand_sadistic",       "Surrender or I'll gut you like a tauntaun!"),
   ("surrender_demand_goodnatured",    "We have the advantage of you. Yield, and you will be well-treated."),
   ("surrender_demand_upstanding",     "You may fight us, but many of your men will be killed, and you will probably lose. Yield, and spare us both the unnecessary bloodshed."),
 
@@ -1653,7 +1653,7 @@ strings = [
   ("lord_follow_refusal_default",       "Follow you? You forget your station, {sir/madame}."),
   ("lord_follow_refusal_martial",       "Perhaps if you one day prove yourself a valorous and honourable warrior, then I would follow you. But not today."),
   ("lord_follow_refusal_quarrelsome",   "Follow someone like you? I don't think so."),
-  ("lord_follow_refusal_pitiless",      "Lords like me do not follow people like you, {sir/madame}."),
+  ("lord_follow_refusal_pitiless",      "Leaders like me do not follow people like you, {sir/madame}."),
   ("lord_follow_refusal_cunning",       "First show me that you are the type of {man/woman} who will not lead me into disaster, and then perhaps I will follow you."),
   ("lord_follow_refusal_sadistic",      "I think not! Rather, you should follow me, as a whipped cur follows {his/her} master."),
   ("lord_follow_refusal_goodnatured",   "Um, I am a bit pressed with errands right now. Perhaps at a later date."),
@@ -1747,7 +1747,7 @@ strings = [
   ("rebellion_agree_upstanding",            "I am sorry. {s45}'s claim is not strong enough for me to inflict the curse of civil disorder on the poor wretches of this land. I will continue to back {s46}. May the Heavens forgive me if I do wrong."),
 
   ("talk_later_default",                    "[liege]"),
-  ("talk_later_martial",                    "Now is not the time to talk politics! I am here today with my fellow lords, armed for battle. You'd better prepare to fight."),
+  ("talk_later_martial",                    "Now is not the time to talk politics! I am here today with my fellow leaders, armed for battle. You'd better prepare to fight."),
   ("talk_later_quarrelsome",                "Do you expect me to discuss betraying my liege with you, while we are surrounded by his army? What do you take me for, a bloody idiot?"),
   ("talk_later_pitiless",                   "Still your tongue! Whatever I have to say on this matter, I will not say it here and now, while we are in the midst of our army."),
   ("talk_later_cunning",                    "This is hardly the time or the place for such a discussion. Perhaps we can discuss it at a later time and a different place, but for now we're still foes."),
@@ -1758,7 +1758,7 @@ strings = [
 
   ("gossip_about_character_default",        "They say that {s6} doesn't possess any interesting character traits."),
   ("gossip_about_character_martial",        "They say that {s6} loves nothing more than war."),
-  ("gossip_about_character_quarrelsome",    "They say that {s6} almost came to blows with another lord lately, because the man made a joke about his nose."),
+  ("gossip_about_character_quarrelsome",    "They say that {s6} almost came to blows with another commander lately, because the man made a joke about his nose."),
   ("gossip_about_character_selfrighteous",  "I heard that {s6} had a squire executed because the unfortunate man killed a deer in his forest."),
   ("gossip_about_character_cunning",        "They say that {s6} is a cunning opponent."),
   ("gossip_about_character_sadistic",       "They say that {s6} likes to torture his enemies. I wouldn't want to get on the bad side of that man."),
@@ -2127,7 +2127,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 	("cantina_rand_msg_6","I've lost my job and am blaster-happy right now, it is best not to bother me."),
 	("cantina_rand_msg_7","I have the death sentence in twelve systems, you better be careful or you'll be dead."),
 	("cantina_rand_msg_8","Droyk! Who do you think you are, leave me alone."),
-	("cantina_rand_msg_9","You are worse than an earworm, stop talking to me."),
+	("cantina_rand_msg_9","You look new here, so some advice about these Cantina's. You will never find a more wretched hive of scum and villainy, you must be cautious."),
 	("cantina_rand_msg_10","My jawa juice was just freshly-squeezed, please let me finish it in peace."),
 
 	("cantina_joke_1","Q:  What do you call a Sith who won't fight?^^A:  A Sithy."),
@@ -2297,7 +2297,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
                               'Patience is always rewarded.'),
                               
   ('swconquest_credits_contb','Original Programming and Development:^'+
-                              ' Brian Tommasini^^'+
+                              ' Brian Tommasini <HokieBT>^^'+
 
                               'Main Programming and Coordinator:^'+
                               ' Ismael Ferreras^^'+
