@@ -2184,7 +2184,7 @@ dialogs = [
 
   
   [anyone,"player_siege_ask_surrender", [(lt, "$g_enemy_strength", 100), (store_mul,":required_str","$g_enemy_strength",5),(ge, "$g_ally_strength", ":required_str")],
-   "Perhaps... if you give your word that you won't harm anyof us?", "player_siege_ask_surrender_treatment", []],
+   "Perhaps... if you give your word that you won't harm any of us?", "player_siege_ask_surrender_treatment", []],
   [anyone,"player_siege_ask_surrender", [(lt, "$g_enemy_strength", 200), (store_mul,":required_str","$g_enemy_strength",3),(ge, "$g_ally_strength", ":required_str")],
    "We... are ready to leave this planet, if you give your word you will not fire upon us.", "player_siege_ask_leave_unmolested", []],
   [anyone,"player_siege_ask_surrender", [],
@@ -3234,7 +3234,7 @@ dialogs = [
                          (gt, ":num_spy_partners", 0)],
    "Beautiful work, {playername}! You captured both the spy and his handler, just as I'd hoped,\
  and the pair are now safely ensconced in my prison, waiting to be questioned.\
- My interogaters shall be busy tonight! Anyway, I'm very pleased with your success, {playername}, and I give you\
+ My interrogators shall be busy tonight! Anyway, I'm very pleased with your success, {playername}, and I give you\
  this purse as a token of my appreciation.", "lord_follow_spy_completed",
    [(party_remove_prisoners, "p_main_party", "trp_spy", 1),
     (party_remove_prisoners, "p_main_party", "trp_spy_partner", 1),
@@ -3884,7 +3884,7 @@ dialogs = [
                                (str_store_faction_name, s14, ":quest_object_faction"),
                              (try_end),
                              ],
-   "You... have convinced me, {playername}. Very well then, you've my apporval to bring a peace offer to {s14}. I cannot guarantee they will accept it, but on the off-chance they do, I will stand by it.", "close_window",
+   "You... have convinced me, {playername}. Very well then, you've my approval to bring a peace offer to {s14}. I cannot guarantee they will accept it, but on the off-chance they do, I will stand by it.", "close_window",
    [(store_mul, ":new_value", "$g_talk_troop", -1),
     (try_begin),
       (quest_slot_eq, "qst_persuade_lords_to_make_peace", slot_quest_target_troop, "$g_talk_troop"),
