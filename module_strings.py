@@ -146,20 +146,20 @@ strings = [
  Remember that you can press the Tab key at any time to quit this tutorial or to exit any other area in the game."),
   ("tutorial_2_msg_2","Press and hold down the right mouse button to raise your shield. Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
   ("tutorial_2_msg_3","Well done, you've succeeded in defending against an armed opponent.\
- The next phase of this tutorial will pit you and your shield against a force of enemy archers.\
- Move on to the next room when you're ready to face the archers."),
-  ("tutorial_2_msg_4","Defend yourself from arrows by raising your shield with the right mouse button. Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
-  ("tutorial_2_msg_5","Excellent, you've put up a succesful defence against archers.\
+ The next phase of this tutorial will pit you and your shield against a force of enemy soldiers.\
+ Move on to the next room when you're ready to face the soldiers."),
+  ("tutorial_2_msg_4","Defend yourself from blaster bolts by raising your shield with the right mouse button. Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
+  ("tutorial_2_msg_5","Excellent, you've put up a succesful defence against soldiers.\
  There is a reward waiting for you in the next room."),
   ("tutorial_2_msg_6","In the default configuration,\
  the F key on your keyboard is used for non-violent interaction with objects and humans in the gameworld.\
  To pick up the sword on the altar, look at it and press F when you see the word 'Equip'."),
   ("tutorial_2_msg_7","A fine weapon! Now you can use it to deliver a bit of payback.\
- Go back through the door and dispose of the archers you faced earlier."),
-  ("tutorial_2_msg_8","Very good. Your last task before finishing this tutorial is to face the maceman.\
- Go through the door now and show him your steel!"),
+ Go back through the door and dispose of the soldiers you faced earlier."),
+  ("tutorial_2_msg_8","Very good. Your last task before finishing this tutorial is to face the infantry soldiers.\
+ Go through the door now and show him your strength!"),
   ("tutorial_2_msg_9","Congratulations! You have now learned how to defend yourself with a shield and even had your first taste of combat with armed opponents.\
- Give it a bit more practice and you'll soon be a renowned swordsman.\
+ Give it a bit more practice and you'll soon be a renowned warrior.\
  The next tutorial covers directional defence, which is one of the most important elements of Mount&Blade combat.\
  You can press the Tab key at any time to return to the tutorial menu."),
 
@@ -175,8 +175,8 @@ strings = [
  You must watch your opponent carefully and only initiate your parry AFTER the enemy starts to attack.\
  If you start BEFORE he readies an attack, you may parry the wrong way altogether!\
  Now it's time for you to move on to the next room, where you'll have to defend yourself against an armed opponent.\
- Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple quarterstaff.\
- Your quarterstaff's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead.\
+ Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple staff.\
+ Your staff's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead.\
  Move on to the next room when you are ready to initiate the fight."),
   ("tutorial_3_msg_3","Press and hold down the right mouse button to defend yourself with your staff after your opponent starts his attack.\
  Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
@@ -194,22 +194,22 @@ strings = [
   ("tutorial_3_2_msg_2","Defeat your opponent with your quarterstaff."),
   ("tutorial_3_2_msg_3","Excellent. Now the only thing standing in your way is one last opponent.\
  He is in the next room. Move in and knock him down."),
-  ("tutorial_3_2_msg_4","Defeat your opponent with your quarterstaff."),
+  ("tutorial_3_2_msg_4","Defeat your opponent with your staff."),
   ("tutorial_3_2_msg_5","Well done! In this tutorial you have learned how to fight ably without a shield.\
  Train hard and train well, and no one shall be able to lay a stroke on you.\
  In the next tutorial you may learn speeder bike riding and mounted combat.\
  You can press the Tab key at any time to return to the tutorial menu."),
 
   ("tutorial_4_msg_1","Welcome to the fourth tutorial.\
- In this sequence you'll learn about riding a speeder bike and how to perform various martial exercises while riding.\
+ In this sequence you'll learn about riding a speeder bike and how to perform various exercises while riding.\
  We'll start by getting you mounted up.\
  Approach the speeder bike, and press the 'F' key when you see the word 'Mount'."),
   ("tutorial_4_msg_2","While riding, the WASD keys control your speeder bike's movement, not your own.\
  Ride your speeder bike and try to follow the yellow flag around the course.\
  When you reach the flag, it will move to the next waypoint on the course until you reach the finish."),
   ("tutorial_4_msg_3","Very good. Next we'll cover attacking enemies while riding. Approach the yellow flag now."),
-  ("tutorial_4_msg_4","Draw your sword (using the mouse wheel) and destroy the four targets.\
- Try hitting the dummies as you pass them at full speed -- this provides an extra challenge,\
+  ("tutorial_4_msg_4","Draw your weapon (using the mouse wheel) and destroy the four targets.\
+ Try hitting the practice targets as you pass them at full speed -- this provides an extra challenge,\
  but the additional speed added to your blow will allow you to do more damage.\
  The easiest way of doing this is by pressing and holding the left mouse button until the right moment,\
  releasing it just before you pass the target."),
@@ -223,8 +223,8 @@ strings = [
 
   ("tutorial_5_msg_1","TODO: Follow order to the flag"),
   ("tutorial_5_msg_2","TODO: Move to the flag, keep your units at this position"),
-  ("tutorial_5_msg_3","TODO: Move to the flag to get the archers"),
-  ("tutorial_5_msg_4","TODO: Move archers to flag1, infantry to flag2"),
+  ("tutorial_5_msg_3","TODO: Move to the flag to get the soldiers"),
+  ("tutorial_5_msg_4","TODO: Move soldiers to flag1, infantry to flag2"),
   ("tutorial_5_msg_5","TODO: Enemy is charging. Fight!"),
   ("tutorial_5_msg_6","TODO: End of battle."),
 
@@ -277,7 +277,7 @@ strings = [
 ##  ("you_are_in_castle","You are at the castle of "),
 ##  ("you_sneaked_into_town","You have sneaked into the town of "),
 
-  ("town_nighttime"," It is late at night and honest folk have abandoned the streets."),
+  ("town_nighttime"," It is late at night and most citizens have abandoned the streets."),
   ("door_locked","The door is locked."),
   ("spacestation_is_abondened","The planet seems to be unoccupied."),
   ("town_is_abondened","The planet has no garrison defending it."),
@@ -310,15 +310,15 @@ strings = [
   # ("attack_walls_continue", "A bloody battle ensues and both sides fight with equal valour. Despite the efforts of your troops, the castle remains in enemy hands."),
   ("attack_walls_success", "After a bloody fight, your brave soldiers manage to take control of the planet from the enemy."),
   ("attack_walls_failure", "Your soldiers fall in waves as they charge the command center, and the few who remain alive soon rout and run away, never to be seen again."),
-  ("attack_walls_continue", "A bloody battle ensues and both sides fight with equal valour. Despite the efforts of your troops, the planet remains in enemy hands."),  
+  ("attack_walls_continue", "A bloody battle ensues and both sides fight aggressively. Despite the efforts of your troops, the planet remains in enemy hands."),  
 
   ("order_attack_success", "Your men fight bravely and defeat the enemy."),
-  ("order_attack_failure", "You watch the battle in despair as the enemy cuts your soldiers down, then easily drives off the few ragged survivors."),
-  ("order_attack_continue", "Despite an extended skirmish, your troops were unable to win a decisive victory."),
+  ("order_attack_failure", "You watch the battle in despair as the enemy destroys your soldiers, then easily overwhelms the few remaining survivors."),
+  ("order_attack_continue", "Despite an extended battle, your troops were unable to win a decisive victory."),
 
   ("join_order_attack_success", "Your men fight well alongside your allies, sharing in the glory as your enemies are beaten."),
-  ("join_order_attack_failure", "You watch the battle in despair as the enemy cuts your soldiers down, then easily drives off the few ragged survivors."),
-  ("join_order_attack_continue", "Despite an extended skirmish, neither your troops nor your allies were able to win a decisive victory over the enemy."),
+  ("join_order_attack_failure", "You watch the battle in despair as the enemy destroys your soldiers, then easily overwhelms the few remaining survivors."),
+  ("join_order_attack_continue", "Despite an extended battle, neither your troops nor your allies were able to win a decisive victory over the enemy."),
 
   ("siege_defender_order_attack_success", "The men of the garrison hold their walls with skill and courage, breaking the enemy assault and skillfully turning the defeat into a full-fledged rout."),
   ("siege_defender_order_attack_failure", "The assault quickly turns into a bloodbath. Valiant efforts are for naught; the overmatched garrison cannot hold the walls, and the enemy puts every last defender to the sword."),
@@ -647,7 +647,7 @@ strings = [
 # chivalric
   ("surrender", "surrender to the enemy"), ##Done - game menus
   ("flee_battle", "run from battle"), ##Done - game menus
-  ("pay_bandits", "pay off common bandits"),
+  ("pay_bandits", "pay off bandits"),
 
 # honest
   ("fail_quest", "fail a quest which we undertook on word of honour"),
