@@ -474,15 +474,15 @@ strings = [
   
 
 # meet_spy_in_enemy_town quest secret sentences
-  ("secret_sign_1",  "The armoire dances at midnight..."),
-  ("secret_sign_2",  "I am selling these fine Khergit tapestries. Would you like to buy some?"),
-  ("secret_sign_3",  "The friend of a friend sent me..."),
-  ("secret_sign_4",  "The wind blows hard from the east and the river runs red..."),
+  ("secret_sign_1",  "Do you want to go to Tosche Station to pick up some power converters?"),
+  ("secret_sign_2",  "Can you speak Bocce?"),
+  ("secret_sign_3",  "What is the possibility of successfully navigating an asteroid field?"),
+  ("secret_sign_4",  "What do you know about Mos Eisley Cantina?"),
   
-  ("countersign_1",  "But does he dance for the dresser or the candlestick?"),
-  ("countersign_2",  "Yes I would, do you have any in blue?"),
-  ("countersign_3",  "But, my friend, your friend's friend will never have a friend like me."),
-  ("countersign_4",  "Have you been sick?"),
+  ("countersign_1",  "No, I can't waste time with that until my chores are done"),
+  ("countersign_2",  "Of course I can, sir. It’s like a second language to me."),
+  ("countersign_3",  "Approximately three thousand seven hundred and twenty to one."),
+  ("countersign_4",  "You will never find a more wretched hive of scum and villainy. You must be cautious."),
 
 #SW - modified random names
 # Names  
