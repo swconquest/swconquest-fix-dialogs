@@ -295,7 +295,7 @@ dialogs = [
   [trp_ramun_the_slave_trader,"ramun_have_blunt_weapon_yes", [],
  "Good. Then all you need to do is beat the bugger down with your weapon, or shoot him with it, and when the fighting's over you clap him in irons.\
  It's a bit different for officers and such, they tend to be protected enough that it won't matter what kind of weapon you use,\
- but your average rabble-rouser will bleed like a stuck nerd if you get him with something sharp. I don't have many requirements in my merchandise,\
+ but your average rabble-rouser will bleed like a stuck nerf if you get him with something sharp. I don't have many requirements in my merchandise,\
  but I do insist they be breathing when I buy them.", "ramun_ask_about_capturing_2",[]],
   [trp_ramun_the_slave_trader,"ramun_have_blunt_weapon_no", [],
  "No? Heh, well, this must be your lucky day. I've got an old club lying around that I was going to throw away.\
@@ -308,7 +308,7 @@ dialogs = [
  "Alright, I'll try and expain it again in simple terms. The basic rule of taking someone prisoner is knocking him down with a blunt weapon, like a club, or shooting him with a stun blaster\
  rather than cutting him open with a lightsaber, or blowing his head off. That way he goes to sleep for a little while rather than bleeding to death, you see?\
  It's a bit different for officers and such, they tend to be protected enough that it won't matter what kind of weapon you use,\
- but your average rabble-rouser will bleed like a stuck nerd if you get him with something sharp.", "ramun_ask_about_capturing_2",[]],
+ but your average rabble-rouser will bleed like a stuck nerf if you get him with something sharp.", "ramun_ask_about_capturing_2",[]],
   [trp_ramun_the_slave_trader|plyr,"ramun_ask_about_capturing_2", [], "Alright, I think I understand. Anything else?", "ramun_ask_about_capturing_3",[]],
   [trp_ramun_the_slave_trader,"ramun_ask_about_capturing_3", [],
  "Well, it's not as simple as all that. Blunt weapons don't do as much damage as a lightsaber or a vibro-weapon, so they won't bring your enemies down as quickly.\
