@@ -763,7 +763,7 @@ dialogs = [
          (str_store_string, s30, "@we have made very little progress so far"),
        (else_try),
          (lt, ":our_ratio", 30),
-         (str_store_string, s30, "@we have suceeded in gaining some ground, but we still have a long way to go"),
+         (str_store_string, s30, "@we have succeeded in gaining some ground, but we still have a long way to go"),
        (else_try),
          (lt, ":our_ratio", 50),
          (str_store_string, s30, "@we have become a significant force, and we have an even chance of victory"),
@@ -2154,7 +2154,7 @@ dialogs = [
      (call_script, "script_end_quest", "qst_rebel_against_faction"),
        ]],
 
-  [anyone|plyr,"rebel_thanks_answer", [], "It was an honour to fight for your cause, {reg65?madame:my lord}.", "rebel_thanks_answer_2", []],
+  [anyone|plyr,"rebel_thanks_answer", [], "It was an honor to fight for your cause, {reg65?madame:my lord}.", "rebel_thanks_answer_2", []],
   [anyone|plyr,"rebel_thanks_answer", [], "You will always have my loyal support, {reg65?my lady:sir}.", "rebel_thanks_answer_2", []],
 
   [anyone,"rebel_thanks_answer_2", [], "I will miss living this life of adventure with you, but my duties await me. So... good-bye for now, {playername}.\
@@ -2418,7 +2418,7 @@ dialogs = [
      (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
      ],
    "Do I know you?.", "pretender_intro_1", []],
-  [anyone|plyr ,"pretender_intro_1", [], "My name is {playername}. At your sevice.", "pretender_intro_2", []],
+  [anyone|plyr ,"pretender_intro_1", [], "My name is {playername}. At your service.", "pretender_intro_2", []],
   [anyone|plyr ,"pretender_intro_1", [], "I am {playername}. Perhaps you have heard of my exploits.", "pretender_intro_2", []],
 
   [anyone ,"pretender_intro_2", [(troop_get_slot, ":rebellion_string", "$g_talk_troop", slot_troop_original_faction),
@@ -3335,7 +3335,7 @@ dialogs = [
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
     (call_script, "script_end_quest", "qst_bring_back_runaway_serfs")]],
   [anyone,"lord_bring_back_runaway_serfs_failed_1b", [],
-   "Hah, now you reveal your true colours, traitor! Your words match your actions all too well. I should never have trusted you.", "close_window",
+   "Hah, now you reveal your true colors, traitor! Your words match your actions all too well. I should never have trusted you.", "close_window",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-10),
     (quest_get_slot, ":home_village", "qst_bring_back_runaway_serfs", slot_quest_object_center),
     (call_script, "script_change_player_relation_with_center",":home_village",6),
@@ -3830,7 +3830,7 @@ dialogs = [
    [(assign, "$g_convince_quest", "qst_collect_debt")]],
 
   [anyone,"lord_ask_to_collect_debt", [],  "Oh. Well, {s1} did lend me some credits a ways back,\
- but I've done them many favours in the past and I consider that money as my due payment.", "lord_ask_to_collect_debt_2",[]],
+ but I've done them many favors in the past and I consider that money as my due payment.", "lord_ask_to_collect_debt_2",[]],
   [anyone|plyr,"lord_ask_to_collect_debt_2", [],  "{s1} considers it a debt. They asked me to speak to you on their behalf.", "convince_begin",[]],
   [anyone|plyr,"lord_ask_to_collect_debt_2", [],  "Then I will not press the matter any further.", "lord_pretalk",[]],
 
@@ -4313,7 +4313,7 @@ dialogs = [
        (assign, ":has_center", 1),
      (try_end),
      (eq, ":has_center", 1),
-    ], "{playername}, you are a {ruler/ruler} without a master, holding systems in your own name, without having allegience to any faction.\
+    ], "{playername}, you are a {ruler/ruler} without a master, holding systems in your own name, without having allegiance to any faction.\
  As long as that continues, no leader in the Galaxy would accept a lasting peace with you.", "lord_pretalk",[]],
   [anyone,"lord_ask_pardon", [(store_sub, ":hostility", 4, "$g_talk_troop_faction_relation"),
                                   (val_mul, ":hostility", ":hostility"), #square it
@@ -6709,7 +6709,7 @@ Hand over my {reg19} credits, if you please, and end our business together.", "l
    [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
   
   [anyone,"lord_mission_deliver_message_rejected_rudely", [], "Hm, is this how you respond to a polite request\
- for a small favor? A poor show, {playername}. I didn't know you would take offence.", "lord_mission_deliver_message_rejected_rudely_2",[]],
+ for a small favor? A poor show, {playername}. I didn't know you would take offense.", "lord_mission_deliver_message_rejected_rudely_2",[]],
     
   [anyone|plyr,"lord_mission_deliver_message_rejected_rudely_2", [], "Then you shall know better from now on.", "lord_mission_deliver_message_rejected_rudely_3",[]],
   [anyone|plyr,"lord_mission_deliver_message_rejected_rudely_2", [], "Forgive my temper, {s65}. I'll deliver your datacard.", "lord_mission_deliver_message_accepted",[]],
@@ -7171,7 +7171,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    []],
   [anyone,"quest_meet_spy_in_enemy_town_accepted_2", [], "You shall have to use stealth. Take care to avoid enemy battlestations, planets and patrols, and don't bring too many troops with you. If you fail to sneak in the first time, give it a while for the garrison to lower its guard again, or you may have a difficult time infiltrating the space port.", "quest_meet_spy_in_enemy_town_accepted_response",
    []],
-  [anyone|plyr,"quest_meet_spy_in_enemy_town_accepted_response", [], "How will I recognise the spy?", "quest_meet_spy_in_enemy_town_accepted_3",
+  [anyone|plyr,"quest_meet_spy_in_enemy_town_accepted_response", [], "How will I recognize the spy?", "quest_meet_spy_in_enemy_town_accepted_3",
    []],
   [anyone,"quest_meet_spy_in_enemy_town_accepted_3", [(quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
                                                       (str_store_party_name_link, s13, ":quest_target_center"),
@@ -7215,7 +7215,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    ]],
 
   [anyone|plyr,"lord_mission_told_raid_caravan_to_start_war", [], "You are right, {s65}, but what can we do?", "lord_mission_tell_raid_caravan_to_start_war_2",[]],
-  [anyone|plyr,"lord_mission_told_raid_caravan_to_start_war", [], "I disagree, sir. Peace is prefarable to war.", "quest_raid_caravan_to_start_war_rejected_1",[]],
+  [anyone|plyr,"lord_mission_told_raid_caravan_to_start_war", [], "I disagree, sir. Peace is preferable to war.", "quest_raid_caravan_to_start_war_rejected_1",[]],
 
   [anyone,"lord_mission_tell_raid_caravan_to_start_war_2", [(quest_get_slot, ":quest_target_faction", "$random_quest_no", slot_quest_target_faction),
                                                             (str_store_faction_name_link, s13, ":quest_target_faction")],
@@ -8219,7 +8219,7 @@ They are going around making terrible accusations against me, impugning my honor
    [(ge, "$g_talk_troop_relation", -5)], "I don't think I owe you such a favor {playername}.\
  I see no reason to accept this for you.", "lord_pretalk",[]],
 
-  [anyone,"convince_friendship", [], "Is this a joke? You've some nerve asking me for favours, {playername},\
+  [anyone,"convince_friendship", [], "Is this a joke? You've some nerve asking me for favors, {playername},\
  and let me assure you you'll get none.", "lord_pretalk",[]],
 
   [anyone,"convince_persuade_begin", 
