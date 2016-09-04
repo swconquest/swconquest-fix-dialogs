@@ -946,7 +946,7 @@ dialogs = [
 			(troop_get_slot,reg4,reg3,slot_upgrade_armor),
 			(neq, reg4,0)
 		],
-		"Stop buying new armour.",
+		"Stop buying new armor.",
 		"member_automanage_clear_armor",
 		[
 			(troop_set_slot,reg3,slot_upgrade_armor,0)
@@ -955,7 +955,7 @@ dialogs = [
 	[anyone,
 		"member_automanage_clear_armor",
 		[],
-		"All right. I won't acquire any armour on my own until you tell me otherwise.",
+		"All right. I won't acquire any armor on my own until you tell me otherwise.",
 		"member_automanage_report",
 		[]
 	],
@@ -965,7 +965,7 @@ dialogs = [
 			(troop_get_slot,reg4,reg3,slot_upgrade_armor),
 			(eq, reg4,0)
 		],
-		"Start upgrading your armour on your own.",
+		"Start upgrading your armor on your own.",
 		"member_automanage_set_armor",
 		[
 			(troop_set_slot,reg3,slot_upgrade_armor,1)
@@ -2883,7 +2883,7 @@ dialogs = [
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_lend_surgeon"),
                          (quest_slot_eq, "qst_lend_surgeon", slot_quest_giver_troop, "$g_talk_troop")],
-   "Your surgeon managed to convince my friend and made the operation.  Fate will decide the outcome now, all my we can do is hope for his recovery.\
+   "Your surgeon managed to convince my friend and made the operation. Fate will decide the outcome now, all my we can do is hope for his recovery.\
  Anyway, I thank you for lending your surgeon to me {sir/madam}. You are a very kind person. I will not forget it.", "lord_generic_mission_completed",
    [
      (call_script, "script_finish_quest", "qst_lend_surgeon", 100),
@@ -6289,7 +6289,7 @@ Hand over my {reg19} credits, if you please, and end our business together.", "l
 ##   "Yes sir.", "lord_claim_center_leave_to_lord", []],
 ##
 ##  [anyone,"lord_claim_center_leave_to_lord", [],
-##   "Very well.  Then I will find a suitable master for {s4}.\
+##   "Very well. Then I will find a suitable master for {s4}.\
 ## In recognition of your bravery and service, I give you these 5000 credits.", "lord_pretalk",
 ##   [(troop_get_slot, ":wealth", "$g_talk_troop", slot_troop_wealth),
 ##    (val_sub, ":wealth", 6000),
@@ -7800,7 +7800,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone,"enemy_lord_tell_mission", [(eq,"$random_quest_no","qst_lend_surgeon")],
    "I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,\
- and unless he is seen to by a surgeon soon,  he will surely die. This man is dear to me, {playername},\
+ and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},\
  but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.\
  I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look,\
  {reg3?she:he} may be able to convince them to give their consent to an operation.\
@@ -9515,7 +9515,7 @@ They are going around making terrible accusations against me, impugning my honor
   [trp_fugitive,"fugitive_2", [], "I do not know what you are talking about {sir/madam}.\
  I assure you, I am just one of the dwellers here.", "fugitive_3",[]],
   [trp_fugitive|plyr,"fugitive_3", [], "Then drop your weapon. If you are innocent, you have nothing to fear.\
- We'll go now and talk to your neighbours, and if they verify your story, I'll go my way.", "fugitive_4",[]],
+ We'll go now and talk to your neighbors, and if they verify your story, I'll go my way.", "fugitive_4",[]],
   [anyone,"fugitive_4", [], "Damn you! You will not be going anywhere!", "close_window",
    [(set_party_battle_mode),
     (try_for_agents, ":cur_agent"),
@@ -10162,7 +10162,7 @@ They are going around making terrible accusations against me, impugning my honor
 	 (str_store_string, s2, "@The {s9} at {s5} asked you to hunt down a pirate named {s4}. They are currently believed to be at {s3}."),	#modified
    ]],
   [anyone,"tavernkeeper_tell_mission", [(eq,"$random_quest_no","qst_bounty_5")],
-   "Yes, but it might be difficult. It seems a certain customer is being hunted down by a certain mercenary. Well trained, well armoured... Yeah, contract versus contract. Go to {s3} and eliminate a bountyhunter named {s4}. If you succeed you'll be rewarded with 300 credits.", "tavernkeeper_mission_hunt_down_fugitive_told",
+   "Yes, but it might be difficult. It seems a certain customer is being hunted down by a certain mercenary. Well trained, well armored... Yeah, contract versus contract. Go to {s3} and eliminate a bountyhunter named {s4}. If you succeed you'll be rewarded with 300 credits.", "tavernkeeper_mission_hunt_down_fugitive_told",
    [
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),
@@ -11937,7 +11937,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
   [anyone|plyr, "bandits_awaiting_ransom_b2", [],
    "I had left the money in a safe place. Let me go fetch it.", "bandits_awaiting_ransom_no_money",[]],
   [anyone, "bandits_awaiting_ransom_no_money", [],
-   "Are you testing our patience or something?  Go and bring that money here quickly.", "close_window",[(assign, "$g_leave_encounter",1)]],
+   "Are you testing our patience or something? Go and bring that money here quickly.", "close_window",[(assign, "$g_leave_encounter",1)]],
   [anyone|plyr, "bandits_awaiting_ransom_b2", [],
    "I have no intention to pay you anything. I demand that you release the girl now!", "bandits_awaiting_ransom_fight",[]],
   [anyone, "bandits_awaiting_ransom_fight", [],
@@ -12143,7 +12143,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
    [
      (str_store_party_name_link, s14, "$g_encountered_party"),
      (setup_quest_text, "qst_deal_with_night_bandits"),
-     (str_store_string, s2, "@The Administrator of {s14} has asked you to deal with a group of bandits terrorising the streets of {s14}. They only come out at night, and only attack lone travellers on the streets."),
+     (str_store_string, s2, "@The Administrator of {s14} has asked you to deal with a group of bandits terrorizing the streets of {s14}. They only come out at night, and only attack lone travellers on the streets."),
      (call_script, "script_start_quest", "qst_deal_with_night_bandits", "$g_talk_troop"),
      ]],
   
@@ -13054,7 +13054,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
 ######## START OF ARENA SPARING KIT - http://forums.taleworlds.net/index.php/topic,57741.0.html #####################################################
 ## Arena sparring begin - Jinnai
 
-  [anyone,"arena_master_spar_teams", [], "Certainly. The arena is currently available. Of course, you will have to supply your own gear, which means there will be no team uniforms.  But that aside, how many teams would you like?",
+  [anyone,"arena_master_spar_teams", [], "Certainly. The arena is currently available. Of course, you will have to supply your own gear, which means there will be no team uniforms. But that aside, how many teams would you like?",
      "arena_master_spar_teams_choose",[(try_for_range,":slot",1,33),(troop_set_slot, "trp_temp_array_a", ":slot", -1),(try_end),(troop_set_slot, "trp_temp_array_a", 1, "trp_player"),(assign,"$temp",1)]],
   [anyone|plyr,"arena_master_spar_teams_choose", [], "Two.", "arena_master_spar_team_one",[(assign, "$g_tournament_next_num_teams", 2),]],
   [anyone|plyr,"arena_master_spar_teams_choose", [(party_get_num_companions,":troops","p_main_party"),(gt,":troops",2)], "Three.", "arena_master_spar_team_one",[(assign, "$g_tournament_next_num_teams", 3),]],
@@ -13096,7 +13096,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
      (str_store_troop_name,s11,"$temp_2")
      ]],
   [anyone,"arena_master_spar_team_one_add", [], "{s11} has been added to Team One.", "arena_master_spar_team_one",[]],
-  [anyone|plyr,"arena_master_spar_team_one_choose", [], "I am finished with Team One.  Let's move on to Team Two.", "arena_master_spar_team_two",[(assign,"$temp",0)]],
+  [anyone|plyr,"arena_master_spar_team_one_choose", [], "I am finished with Team One. Let's move on to Team Two.", "arena_master_spar_team_two",[(assign,"$temp",0)]],
   [anyone|plyr,"arena_master_spar_team_one_choose", [], "Never mind. I'm calling the whole thing off.", "arena_master_pre_talk",[]],
 
   [anyone,"arena_master_spar_team_two", [(gt,"$g_tournament_next_num_teams",2),(eq,"$temp",8)], "Team Two is full. Team Three is next.", "arena_master_spar_team_three",[(assign,"$temp",0)]],
@@ -13135,8 +13135,8 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
      (str_store_troop_name,s11,"$temp_2")
      ]],
   [anyone,"arena_master_spar_team_two_add", [], "{s11} has been added to Team Two.", "arena_master_spar_team_two",[]],
-  [anyone|plyr,"arena_master_spar_team_two_choose", [(gt,"$g_tournament_next_num_teams",2)], "I am finished with Team Two.  Let's move on to Team Three.", "arena_master_spar_team_three",[(assign,"$temp",0)]],
-  [anyone|plyr,"arena_master_spar_team_two_choose", [(eq,"$g_tournament_next_num_teams",2)], "I am finished with Team Two.  Let's begin the match.", "arena_master_spar_start_it_up",[]],
+  [anyone|plyr,"arena_master_spar_team_two_choose", [(gt,"$g_tournament_next_num_teams",2)], "I am finished with Team Two. Let's move on to Team Three.", "arena_master_spar_team_three",[(assign,"$temp",0)]],
+  [anyone|plyr,"arena_master_spar_team_two_choose", [(eq,"$g_tournament_next_num_teams",2)], "I am finished with Team Two. Let's begin the match.", "arena_master_spar_start_it_up",[]],
   [anyone|plyr,"arena_master_spar_team_two_choose", [], "Never mind. I'm calling the whole thing off.", "arena_master_pre_talk",[]],
 
   [anyone,"arena_master_spar_team_three", [(gt,"$g_tournament_next_num_teams",3),(eq,"$temp",8)], "Team Three is full. Team Four is next.", "arena_master_spar_team_four",[(assign,"$temp",0)]],
@@ -13175,8 +13175,8 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
      (str_store_troop_name,s11,"$temp_2")
      ]],
   [anyone,"arena_master_spar_team_three_add", [], "{s11} has been added to Team Three.", "arena_master_spar_team_three",[]],
-  [anyone|plyr,"arena_master_spar_team_three_choose", [(gt,"$g_tournament_next_num_teams",3)], "I am finished with Team Three.  Let's move on to Team Four.", "arena_master_spar_team_four",[(assign,"$temp",0)]],
-  [anyone|plyr,"arena_master_spar_team_three_choose", [(eq,"$g_tournament_next_num_teams",3)], "I am finished with Team Three.  Let's begin the match.", "arena_master_spar_start_it_up",[]],
+  [anyone|plyr,"arena_master_spar_team_three_choose", [(gt,"$g_tournament_next_num_teams",3)], "I am finished with Team Three. Let's move on to Team Four.", "arena_master_spar_team_four",[(assign,"$temp",0)]],
+  [anyone|plyr,"arena_master_spar_team_three_choose", [(eq,"$g_tournament_next_num_teams",3)], "I am finished with Team Three. Let's begin the match.", "arena_master_spar_start_it_up",[]],
   [anyone|plyr,"arena_master_spar_team_three_choose", [], "Never mind. I'm calling the whole thing off.", "arena_master_pre_talk",[]],
 
   [anyone,"arena_master_spar_team_four", [(eq,"$temp",8)], "Team Four is full. Let the match begin!", "arena_master_spar_start_it_up",[]],
@@ -13214,7 +13214,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
      (str_store_troop_name,s11,"$temp_2")
      ]],
   [anyone,"arena_master_spar_team_four_add", [], "{s11} has been added to Team Four.", "arena_master_spar_team_four",[]],
-  [anyone|plyr,"arena_master_spar_team_four_choose", [], "I am finished with Team Four.  Let's begin the match.", "arena_master_spar_start_it_up",[]],
+  [anyone|plyr,"arena_master_spar_team_four_choose", [], "I am finished with Team Four. Let's begin the match.", "arena_master_spar_start_it_up",[]],
   [anyone|plyr,"arena_master_spar_team_four_choose", [], "Never mind. I'm calling the whole thing off.", "arena_master_pre_talk",[]],
 
   [anyone,"arena_master_spar_start_it_up", [], "Here you go then. Good luck.", "close_window",
@@ -13645,7 +13645,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
     (val_add, "$bandit_tribute", 100),
     (val_mul, "$bandit_tribute", 10),
     (assign, reg5, "$bandit_tribute")
-    ], "Money without blood, that's our favourite kind. Pay us {reg5} credits and we'll let you be on your way.", "bandit_barter_2",[]],
+    ], "Money without blood, that's our favorite kind. Pay us {reg5} credits and we'll let you be on your way.", "bandit_barter_2",[]],
   [anyone|plyr,"bandit_barter_2", [[store_troop_gold,reg(2)],[ge,reg(2),"$bandit_tribute"],[assign,reg(5),"$bandit_tribute"]],
    "Here're your credits, now let us go.", "bandit_barter_3a",[[troop_remove_gold, "trp_player","$bandit_tribute"]]],
   [anyone|plyr,"bandit_barter_2", [],
@@ -13758,7 +13758,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
    "I am thinking of buying a vehicle.", "trade_requested_horse",[]],
 
   [anyone,"trade_requested_weapons", [], "Ah, yes {sir/madam}. These arms are the best you'll find anywhere.", "merchant_trade",[[change_screen_trade]]],
-  [anyone,"trade_requested_armor", [], "Of course, {sir/madam}. You won't find better quality armour than these in all the Galaxy.", "merchant_trade",[[change_screen_trade]]],
+  [anyone,"trade_requested_armor", [], "Of course, {sir/madam}. You won't find better quality armor than these in all the Galaxy.", "merchant_trade",[[change_screen_trade]]],
   [anyone,"trade_requested_horse", [], "You have a fine eye for vehicles, {sir/madam}. You won't find better machines than these anywhere else.", "merchant_trade",[[change_screen_trade]]],
 
 
@@ -13994,13 +13994,13 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
                                          (eq, ":walker_type", walkert_needs_money),
                                          (party_slot_eq, "$current_town", slot_party_type, spt_minorplanet)],
    "Disaster has struck my family, {sir/madam}. A pestilence has ruined the crops on our fields, and my poor children lie at home hungry and sick.\
- My neighbours are too poor themselves to help me.", "town_dweller_poor",[]],
+ My neighbors are too poor themselves to help me.", "town_dweller_poor",[]],
 
   [anyone,"town_dweller_ask_situation", [(call_script, "script_agent_get_town_walker_details", "$g_talk_agent"),
                                          (assign, ":walker_type", reg0),
                                          (eq, ":walker_type", walkert_needs_money)],
    "My life is miserable, {sir/madam}. I haven't been able to find a job for months, and my poor children go to bed hungry each night.\
- My neighbours are too poor themselves to help me.", "town_dweller_poor",[]],
+ My neighbors are too poor themselves to help me.", "town_dweller_poor",[]],
 
   [anyone|plyr,"town_dweller_poor", [(store_troop_gold, ":gold", "trp_player"),
                                      (ge, ":gold", 300),
