@@ -946,7 +946,7 @@ dialogs = [
 			(troop_get_slot,reg4,reg3,slot_upgrade_armor),
 			(neq, reg4,0)
 		],
-		"Stop buying new armour.",
+		"Stop buying new armor.",
 		"member_automanage_clear_armor",
 		[
 			(troop_set_slot,reg3,slot_upgrade_armor,0)
@@ -955,7 +955,7 @@ dialogs = [
 	[anyone,
 		"member_automanage_clear_armor",
 		[],
-		"All right. I won't acquire any armour on my own until you tell me otherwise.",
+		"All right. I won't acquire any armor on my own until you tell me otherwise.",
 		"member_automanage_report",
 		[]
 	],
@@ -965,7 +965,7 @@ dialogs = [
 			(troop_get_slot,reg4,reg3,slot_upgrade_armor),
 			(eq, reg4,0)
 		],
-		"Start upgrading your armour on your own.",
+		"Start upgrading your armor on your own.",
 		"member_automanage_set_armor",
 		[
 			(troop_set_slot,reg3,slot_upgrade_armor,1)
@@ -10162,7 +10162,7 @@ They are going around making terrible accusations against me, impugning my honor
 	 (str_store_string, s2, "@The {s9} at {s5} asked you to hunt down a pirate named {s4}. They are currently believed to be at {s3}."),	#modified
    ]],
   [anyone,"tavernkeeper_tell_mission", [(eq,"$random_quest_no","qst_bounty_5")],
-   "Yes, but it might be difficult. It seems a certain customer is being hunted down by a certain mercenary. Well trained, well armoured... Yeah, contract versus contract. Go to {s3} and eliminate a bountyhunter named {s4}. If you succeed you'll be rewarded with 300 credits.", "tavernkeeper_mission_hunt_down_fugitive_told",
+   "Yes, but it might be difficult. It seems a certain customer is being hunted down by a certain mercenary. Well trained, well armored... Yeah, contract versus contract. Go to {s3} and eliminate a bountyhunter named {s4}. If you succeed you'll be rewarded with 300 credits.", "tavernkeeper_mission_hunt_down_fugitive_told",
    [
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),
@@ -13758,7 +13758,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
    "I am thinking of buying a vehicle.", "trade_requested_horse",[]],
 
   [anyone,"trade_requested_weapons", [], "Ah, yes {sir/madam}. These arms are the best you'll find anywhere.", "merchant_trade",[[change_screen_trade]]],
-  [anyone,"trade_requested_armor", [], "Of course, {sir/madam}. You won't find better quality armour than these in all the Galaxy.", "merchant_trade",[[change_screen_trade]]],
+  [anyone,"trade_requested_armor", [], "Of course, {sir/madam}. You won't find better quality armor than these in all the Galaxy.", "merchant_trade",[[change_screen_trade]]],
   [anyone,"trade_requested_horse", [], "You have a fine eye for vehicles, {sir/madam}. You won't find better machines than these anywhere else.", "merchant_trade",[[change_screen_trade]]],
 
 
