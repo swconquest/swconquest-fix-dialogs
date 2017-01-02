@@ -10494,7 +10494,7 @@ I suppose there are plenty of bounty hunters around to get the job done...", "ta
   [anyone|plyr, "tavern_traveler_tell_factions_2", [], "Thank you. That was all I needed to know", "close_window", []],
 
   [anyone, "tavern_traveler_tell_factions_3", [(gt, "$player_has_homage", 0)], "Well, you probably know everything I could tell you already. You seem to be doing pretty well.",
-   "tavern_traveler_tell_factions_4", []],
+   "tavern_traveler_tell_factions_5", []],
   [anyone, "tavern_traveler_tell_factions_3", [], "The Empire and Rebels, both will pay good money for mercenaries if they are engaged in a war.\
  If you have done a bit of fighting, speaking with one of their commanders will probably result in being offered a mercenary contract.\
  However the real rewards come if you can manage to become a commander to a ruler.\
