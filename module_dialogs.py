@@ -247,7 +247,7 @@ dialogs = [
   ]],
   [trp_ramun_the_slave_trader|plyr, "ramun_introduce_1", [], "Never mind.", "close_window",[]],
   [trp_ramun_the_slave_trader, "ramun_introduce_2", [], "Scum? Such harsh tones- I am a trader of... a different kind.\
- Understand, that my cargo is one that so often attempts to make its escape at each and every starport. Troublesome, really.", "ramun_introduce_3",[]],
+ Understand that my cargo is one that so often attempts to make its escape at each and every starport. Troublesome, really.", "ramun_introduce_3",[]],
   [trp_ramun_the_slave_trader|plyr, "ramun_introduce_3", [], "Livestock?", "ramun_introduce_4",[]],
   [trp_ramun_the_slave_trader, "ramun_introduce_4", [], "Close enough. I like to call myself the man who keeps every ship in space moving.\
  Ships are flown by engines, you see, and engines need a crew to run them or they stop. That's where I come in.", "ramun_introduce_5",[]],
@@ -373,7 +373,7 @@ dialogs = [
 
   [party_tpl|pt_bountyhunters,"start", [(eq,"$talk_context",tc_party_encounter)], "Hey, you there! You seen any smugglers around here?", "bountyhunter_talk_b",[]],
   [party_tpl|pt_bountyhunters|plyr,"bountyhunter_talk_b", [], "Yes, they went this way about an hour ago.", "bountyhunter_talk_b1",[]],
-  [party_tpl|pt_bountyhunters,"bountyhunter_talk_b1", [], "I knew it! Come on, lads, lets go get these bastards! Thanks a lot, friend.", "close_window",[(assign, "$g_leave_encounter",1)]],
+  [party_tpl|pt_bountyhunters,"bountyhunter_talk_b1", [], "I knew it! Come on, lads, let's go get these bastards! Thanks a lot, friend.", "close_window",[(assign, "$g_leave_encounter",1)]],
   [party_tpl|pt_bountyhunters|plyr,"bountyhunter_talk_b", [], "No, haven't seen any outlaws lately.", "bountyhunter_talk_b2",[]],
   [party_tpl|pt_bountyhunters,"bountyhunter_talk_b2", [], "Bah. They're holed up in this sector like womp rats, but we'll smoke them out yet. Sooner or later.", "close_window",[(assign, "$g_leave_encounter",1)]],
 
@@ -437,12 +437,12 @@ dialogs = [
     (try_end),
    ]],
 
-  [anyone|plyr,"miningvessel_talk", [], "{reg1?Ore shipment? That sounds valuable. You can either surrender the shipment to me or I will take it by force!"
+  [anyone|plyr,"miningvessel_talk", [], "{reg1?Ore shipment? That sounds valuable. You can either surrender the shipment to me or I'll take it by force!"
                                             +":I've come back to put an end to your pathetic mining operation.}", "close_window",
 											[(party_set_slot, "$g_encountered_party", slot_center_player_relation, -6),
                                              (assign, "$encountered_party_friendly", 0)]],
 
-  [anyone|plyr,"miningvessel_talk", [], "{reg1?You all seem busy. I'll leave you alone. Good-bye."
+  [anyone|plyr,"miningvessel_talk", [], "{reg1?You seem busy. I'll leave you alone. Good-bye."
                                             +":Understood, I've leant my lesson.}", "close_window",
 										    [(assign, "$g_leave_encounter",1)]],
   
@@ -452,9 +452,9 @@ dialogs = [
 							(store_troop_faction, ":player_faction", "trp_player"),
 							(store_relation,":rel", "$g_encountered_party_faction",":player_faction"),
 							(lt, ":rel", 0),
-							], "Halt! You are flying through restricted space. We're placing you under arrest", "patrol_1",[]],
+							], "Halt! You are flying through restricted space. We're placing you under arrest!", "patrol_1",[]],
 [anyone|plyr, "patrol_1", [], "Ha! You don't scare me. Arrest this!", "close_window",[[encounter_attack]]],
-[party_tpl|pt_galacticempire_escort,"start", [], "We are patrolling this sector for enemies. State your business", "patrol_2",[]],
+[party_tpl|pt_galacticempire_escort,"start", [], "We are patrolling this sector for enemies. State your business.", "patrol_2",[]],
 [anyone|plyr, "patrol_2", [
 							(store_troop_faction, ":player_faction", "trp_player"),
 							(store_relation,":rel", "$g_encountered_party_faction",":player_faction"),
@@ -539,7 +539,7 @@ dialogs = [
                      (str_store_string, s1, "@You may have won more of our duels than I, but that will change today!"),
                     (else_try),
                      (eq, ":duel_losses", ":duel_wins"),
-                     (str_store_string, s1, "@We seem to be evenly matched so another duel should prove to be interesting."),
+                     (str_store_string, s1, "@We seem to be evenly matched, so another duel should prove to be interesting."),
                     (else_try),
                       (str_store_string, s1, "@You should not be seeing this text."),
                     (try_end),
@@ -572,13 +572,13 @@ dialogs = [
             (troop_is_guarantee_horse, "$g_talk_troop"),
             (assign, "$talk_troop_mounted",1),
             ],
-         "I would like to duel mounted", "duel_weap_mounted", [(str_clear, s4), (str_store_string, s4, "@speeder bikes"),]],
+         "I would like to duel mounted.", "duel_weap_mounted", [(str_clear, s4), (str_store_string, s4, "@speeder bikes"),]],
  
  [anyone|plyr,"duel_choose_mount", [
             (this_or_next|troop_is_mounted, "$g_talk_troop"),
             (troop_is_guarantee_horse, "$g_talk_troop"),
             ],
-         "I would like to duel on foot", "duel_weap_choose", [(str_clear, s4), (str_store_string, s4, "@foot"),]],
+         "I would like to duel on foot.", "duel_weap_choose", [(str_clear, s4), (str_store_string, s4, "@foot"),]],
  
  [anyone|plyr,"duel_choose_mount", [
             (neq, "$talk_troop_mounted", 1),
@@ -600,10 +600,10 @@ dialogs = [
          "We should fight with two-handed weapons.", "duel_start", [(str_clear, s5), (str_store_string, s5, "@two-handed weapons"),
             (assign, "$g_duel_vis_point_plyr", 8), (assign, "$g_duel_vis_point_opp", 9),]],
     [anyone|plyr,"duel_weap_mounted", [],
-         "A duel with mandalorian armor and ranged weapons would be my choice.", "duel_start", [(str_clear, s5), (str_store_string, s5, "@mandalorian armor and ranged weapons"),
+         "A duel with Mandalorian armor and ranged weapons would be my choice.", "duel_start", [(str_clear, s5), (str_store_string, s5, "@mandalorian armor and ranged weapons"),
             (assign, "$g_duel_vis_point_plyr", 12), (assign, "$g_duel_vis_point_opp", 13),]],
     [anyone|plyr,"duel_weap_mounted", [],
-         "What was your previous question again?.", "duel_accept", []],
+         "What was your previous question again?", "duel_accept", []],
 
 #options for the unmounted fights
  [anyone, "duel_weap_choose", [], "What kind of weapons would you like to fight with?", "duel_weap_choose", []],
@@ -617,7 +617,7 @@ dialogs = [
          "We should fight with two-handed weapons.", "duel_start", [(str_clear, s5), (str_store_string, s5, "@two-handed weapons"),
             (assign, "$g_duel_vis_point_plyr", 10), (assign, "$g_duel_vis_point_opp", 11),]],
     [anyone|plyr,"duel_weap_choose", [],
-         "A duel with mandalorian armor and ranged weapons would be my choice.", "duel_start", [(str_clear, s5), (str_store_string, s5, "@mandalorian armor and ranged weapons"),
+         "A duel with Mandalorian armor and ranged weapons would be my choice.", "duel_start", [(str_clear, s5), (str_store_string, s5, "@mandalorian armor and ranged weapons"),
             (assign, "$g_duel_vis_point_plyr", 14), (assign, "$g_duel_vis_point_opp", 15),]],
     [anyone|plyr,"duel_weap_choose", [],
          "What was your previous question again?.", "duel_accept", []],
@@ -654,7 +654,7 @@ dialogs = [
   [anyone|plyr,"member_castellan_talk", [],
    "I want you to abandon the garrison and join my party.", "member_castellan_join",[]],
   [anyone,"member_castellan_join", [(party_can_join_party,"$g_encountered_party","p_main_party")],
-   "I've grown quite fond of the place... But if it is your wish, {playername}, I'll come with you.", "close_window", [
+   "I've grown quite fond of the place... but if it is your wish, {playername}, I'll come with you.", "close_window", [
        (assign, "$g_move_heroes", 1),
        (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
        (party_clear, "$g_encountered_party"),
@@ -1565,7 +1565,7 @@ dialogs = [
        ]],
 
   [anyone|plyr, "companion_recruit_meet_again", [
-      ], "So... What have you been doing since our last encounter?", "companion_recruit_backstory_delayed", []],
+      ], "So... what have you been doing since our last encounter?", "companion_recruit_backstory_delayed", []],
 
   [anyone|plyr, "companion_recruit_meet_again", [
       ],  "Good day to you.", "close_window", [
@@ -1583,7 +1583,7 @@ dialogs = [
 
 
   [anyone|plyr, "companion_recruit_secondchance", [
-      ], "My apologies if I was rude earlier. What was your story again?", "companion_recruit_backstory_b", []],
+      ], "I'm sorry if I was rude earlier. What was your story again?", "companion_recruit_backstory_b", []],
 
   [anyone|plyr, "companion_recruit_secondchance", [
       ],  "Never mind.", "close_window", [
@@ -1624,7 +1624,7 @@ dialogs = [
                      (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
                      (str_store_string, 5, ":honorific"),
    ],
-   "It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, killed, or got away. I've been roaming around since then, looking for you. Shall I get my gear together and rejoin your company?",
+   "It's good to see you here, {s5}! {s6}, and I didn't know whether you had been captured, killed, or in hiding. I've been roaming around since then, looking for you. Shall I get my gear together and rejoin your company?",
    "companion_rehire", [
                      (troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate),
       ]],
@@ -1652,7 +1652,7 @@ dialogs = [
                      (troop_get_slot, ":speech", "$g_talk_troop", slot_troop_backstory_delayed),
                      (str_store_string, 5, ":speech"),
    ],
-   "It is good to see you, {s21}! To tell you the truth, I had hoped to run into you.",
+   "It's good to see you, {s21}! To be honest, I had hoped to run into you.",
    "companion_was_dismissed", [
                      (troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate),
       ]],
@@ -1736,7 +1736,7 @@ dialogs = [
 #     (faction_slot_eq, "fac_player_supporters_faction", slot_faction_leader, "$g_talk_troop"),
 #     (ge, "$g_center_taken_by_player_faction", 0),
      ],
-   "Hmmm. All right, {playername}. I value your counsel highly. {reg6?I:{reg7?You:{s11}}} will be the new {reg3?lady:officer} of {s1}.", "close_window",
+   "Hmmm. Alright, {playername}. I value your counsel highly. {reg6?I:{reg7?You:{s11}}} will be the new {reg3?lady:officer} of {s1}.", "close_window",
    [
      (assign, ":new_owner", "$temp"),
      (call_script, "script_calculate_troop_score_for_center", ":new_owner", "$g_center_taken_by_player_faction"),
@@ -1823,7 +1823,7 @@ dialogs = [
 
   [anyone|plyr, "companion_quitting_response", [
                 (eq, "$player_can_persuade_npc", 1),
-      ], "Perhaps I can persuade you to change your mind.", "companion_quitting_persuasion", [
+      ], "Maybe I can convince you to stay.", "companion_quitting_persuasion", [
             (assign, "$player_can_persuade_npc", 0),
           ]],
 
@@ -1832,7 +1832,7 @@ dialogs = [
                 (store_skill_level, ":persuasion", "skl_persuasion", "trp_player"),
                 (le, ":random", ":persuasion"),
                      ],
-   "Hm. When you put it like that, I suppose I can stay a while longer, see if things improve.", "close_window",
+   "Hm. When you put it like that, I suppose I can stay a while longer-- see if things improve.", "close_window",
    [
                 (troop_get_slot, ":morality_penalties", "$map_talk_troop", slot_troop_morality_penalties),
                 (val_div, ":morality_penalties", 2),
@@ -1974,7 +1974,7 @@ dialogs = [
       (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash2_object),
       (str_store_troop_name, s11, ":object"),
       ]+gender_fix(reg11, ":object")+[
-      ],  "Tell {s11} you have my support in this, and {reg11?she:he} should hold {reg11?her:his} tongue.", "close_window", [
+      ],  "Tell {s11} you have my support in this, and that {reg11?she:he} should hold {reg11?her:his} tongue.", "close_window", [
                     (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash2_state, pclash_penalty_to_other),
           ]],
   
@@ -2156,7 +2156,7 @@ dialogs = [
 
   [anyone|plyr,"rebel_thanks_answer", [], "It was an honor to fight for your cause, {reg65?madame:my lord}.", "rebel_thanks_answer_2", []],
   [anyone|plyr,"rebel_thanks_answer", [], "You will always have my loyal support, {reg65?my lady:sir}.", "rebel_thanks_answer_2", []],
-
+0
   [anyone,"rebel_thanks_answer_2", [], "I will miss living this life of adventure with you, but my duties await me. So... good-bye for now, {playername}.\
  I hope I'll see you again soon.", "close_window", []],
 
@@ -2177,16 +2177,16 @@ dialogs = [
 
 # Faction Lords:
   [anyone,"start", [(eq, "$talk_context", tc_spacestation_commander)],
-   "What the- how did you get on this secure channel?! What do you want?", "player_siege_spacestation_commander_1", []],
+   "What the- how did you get on this secure channel?! What do you want?!", "player_siege_spacestation_commander_1", []],
   [anyone|plyr,"player_siege_spacestation_commander_1", [],
-   "Surrender now! Your shields won't hold, and many Troops have lost their lives. Your situation is hopeless.", "player_siege_ask_surrender", []],
+   "Surrender now! Your shields won't hold, and your troops will not survive our siege! Your situation is hopeless!", "player_siege_ask_surrender", []],
   [anyone|plyr,"player_siege_spacestation_commander_1", [], "Nothing. I'll leave you for now.", "close_window", []],
 
   
   [anyone,"player_siege_ask_surrender", [(lt, "$g_enemy_strength", 100), (store_mul,":required_str","$g_enemy_strength",5),(ge, "$g_ally_strength", ":required_str")],
    "Perhaps... if you give your word that you won't harm any of us?", "player_siege_ask_surrender_treatment", []],
   [anyone,"player_siege_ask_surrender", [(lt, "$g_enemy_strength", 200), (store_mul,":required_str","$g_enemy_strength",3),(ge, "$g_ally_strength", ":required_str")],
-   "We... are ready to leave this planet, if you give your word you will not fire upon us.", "player_siege_ask_leave_unmolested", []],
+   "We... are ready to leave this place, if you give your word you will not fire upon us.", "player_siege_ask_leave_unmolested", []],
   [anyone,"player_siege_ask_surrender", [],
    "Surely you are joking? You cannot hope to defeat us. We'll die fighting before surrendering to you!", "close_window", []],
 
@@ -2194,7 +2194,7 @@ dialogs = [
   [anyone|plyr,"player_siege_ask_surrender_treatment", [],
    "I'll give you nothing. Surrender now or be destroyed!", "player_siege_ask_surrender_treatment_reject", []],
   [anyone,"player_siege_ask_surrender_treatment_reject", [],
-   "I should have known better, then to bargain with scum like you. All hands, man your battlestations. We'll not go without a fight!", "close_window", []],
+   "I should have known better than to bargain with scum like you. All hands, man your battlestations. We won't go without a fight!", "close_window", []],
   [anyone|plyr,"player_siege_ask_surrender_treatment", [],
    "You will be ransomed and your soldiers will live. I give you my word.", "player_siege_ask_surrender_treatment_accept", []],
   [anyone,"player_siege_ask_surrender_treatment_accept", [],
@@ -2207,14 +2207,14 @@ dialogs = [
   [anyone|plyr,"player_siege_ask_leave_unmolested", [],
    "Unacceptable. I want prisoners and blood.", "player_siege_ask_leave_unmolested_reject", []],
   [anyone,"player_siege_ask_leave_unmolested_reject", [],
-   "Then these negotiations are over. All hands, man battlestations. If it's a fight they want it's a fight they'll get.", "close_window", []],
+   "Then these negotiations are over. All hands, man battlestations! If it's a fight they want it's a fight they'll get.", "close_window", []],
 
   
 #After battle texts
   
   [anyone,"start", [(eq, "$talk_context", tc_hero_freed),
                       (troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_faction_hero)],
-   "I am in your debt for freeing me from that scum infested place, thank you.", "freed_lord_answer",
+   "I am in your debt for freeing me from that scum-infested place, thank you.", "freed_lord_answer",
    [
     (call_script, "script_remove_troop_from_prison", "$g_talk_troop"),
    ]],
@@ -2230,10 +2230,10 @@ dialogs = [
     ]],#take prisoner
 
   [anyone,"freed_lord_answer_1", [],
-   "Someday you will pay for this.", "close_window", []],
+   "Someday, you'll pay for this.", "close_window", []],
 
   [anyone|plyr,"freed_lord_answer", [],
-   "You are free to go on your way, sir.", "freed_lord_answer_2",
+   "You're free to go on your way, friend", "freed_lord_answer_2",
    [(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 7),
     (call_script, "script_change_player_honor", 2),
 #    (troop_get_slot, ":cur_rank", "$g_talk_troop", slot_troop_faction_rank),
@@ -2349,7 +2349,7 @@ dialogs = [
   [anyone, "party_encounter_offer_dont_fight", [(gt, "$g_talk_troop_relation", 30),
 #TODO: Add adition conditions, lord personalities, battle advantage, etc...                                                
                     ],
-   "I owe you a favor, don't I. Well... all right then. I will let you go just this once.", "close_window", [
+   "I owe you a favor, don't I. Well... alright, then. I'll let you go-- but just this once!", "close_window", [
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop", -7),
     (store_current_hours,":protected_until"),
     (val_add, ":protected_until", 72),
@@ -2360,7 +2360,7 @@ dialogs = [
   
   [anyone, "party_encounter_offer_dont_fight", [
                     ],
-   "Ha! But, I want to fight you! All hands, battlestations!", "close_window", []],
+   "Ha! But I want to fight you! All hands, battlestations!", "close_window", []],
   
 ##  [anyone,"start", [(eq,"$talk_context",tc_party_encounter),
 ##                    (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_faction_hero),
@@ -2787,7 +2787,7 @@ dialogs = [
                      (gt, "$g_talk_troop_relation", 10),
                      (le,"$talk_context",tc_siege_commander),
                      ],
-   "Good to see you again {playername}...", "lord_start", []],
+   "Good to see you again, {playername}...", "lord_start", []],
 
   [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_faction_hero),
                      (neq, "$g_talk_troop_met", 0),
@@ -2804,7 +2804,7 @@ dialogs = [
                      ],
    "Do I know you?", "lord_meet_neutral", []],
   [anyone|plyr ,"lord_meet_neutral", [],  "I am {playername}.", "lord_intro", []],
-  [anyone|plyr ,"lord_meet_neutral", [],  "My name is {playername}. At your service sir.", "lord_intro", []],
+  [anyone|plyr ,"lord_meet_neutral", [],  "My name is {playername}. At your service, sir.", "lord_intro", []],
 
   [anyone ,"lord_intro", [],
    "{s11}", "lord_start", [(faction_get_slot, ":faction_leader", "$g_talk_troop_faction", slot_faction_leader),
@@ -3010,7 +3010,7 @@ dialogs = [
                          (check_quest_failed, "qst_raid_caravan_to_start_war"),
                          ],
    "You incompetent buffoon!\
- What in Hell made you think that getting yourself captured while trying to start a war was a good idea?\
+ What the hell made you think that getting yourself captured while trying to start a war was a good idea?\
  These plans took months to prepare, and now everything's been ruined! I will not forget this, {playername}.\
  Oh, be assured that I will not.", "lord_pretalk",
    [
@@ -3091,7 +3091,7 @@ dialogs = [
 
   [anyone,"lord_kill_local_merchant_let_go_2", [],
    "Idiot! You were supposed to remove him, not give him a reprimand and send him on his way.\
- He had better do as you say, or you'll both regret it.\
+ He'd better do as you say, or you'll both regret it.\
  Here, this is half the credits I promised you. Don't say a word, {playername}, you're lucky to get even that.\
  I have little use for {troops/people} who cannot follow orders.", "lord_pretalk",
    [(call_script, "script_troop_add_gold", "trp_player", 300),
@@ -3233,8 +3233,8 @@ dialogs = [
                          (gt, ":num_spies", 0),
                          (gt, ":num_spy_partners", 0)],
    "Beautiful work, {playername}! You captured both the spy and his handler, just as I'd hoped,\
- and the pair are now safely ensconced in my prison, waiting to be questioned.\
- My interrogators shall be busy tonight! Anyway, I'm very pleased with your success, {playername}, and I give you\
+ and the pair are now safely caged in my prison, waiting to be questioned.\
+ My interrogators will certainly be busy tonight! Anyway, I'm very pleased with your success, {playername}, and I give you\
  this credit chip as a token of my appreciation.", "lord_follow_spy_completed",
    [(party_remove_prisoners, "p_main_party", "trp_spy", 1),
     (party_remove_prisoners, "p_main_party", "trp_spy_partner", 1),
@@ -3331,7 +3331,7 @@ dialogs = [
    "Perhaps if you had treated them better...", "lord_bring_back_runaway_serfs_failed_1b", []],
   [anyone,"lord_bring_back_runaway_serfs_failed_1a", [],
    "That is hardly an excuse for failure, {playername}.\
- Now if you will excuse me, I need to recruit new servants to work these fields before we all starve.", "lord_pretalk",
+ Now, if you will excuse me, I need to recruit new servants to work these fields before we all starve.", "lord_pretalk",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
     (call_script, "script_end_quest", "qst_bring_back_runaway_serfs")]],
   [anyone,"lord_bring_back_runaway_serfs_failed_1b", [],
@@ -3639,7 +3639,7 @@ dialogs = [
 
 ##  [anyone,"lord_start", [(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
 ##                         (is_between,"$g_talk_troop_faction_relation",0,3),
-###                         (eq,"$players_faction",0),
+##                         (eq,"$players_faction",0),
 ##                         ],
 ##   "Why don't you join us in our cause? You seem to be an able fighter.\
 ## We need {troops/people} like you who will take part in our glory and share the spoils of our victory.", "lord_talk",[]],
@@ -3775,7 +3775,7 @@ dialogs = [
      ]],
 
   [anyone,"lord_buy_prisoner_deny", [],
-   "Mmm. As you wish, {playername}, but you'll not get a better offer. Take it from me.", "lord_pretalk", []],
+   "Mmm. As you wish, {playername}, but you'll not get a better offer. Take my word for it.", "lord_pretalk", []],
 
   [anyone,"lord_start", [],
    "What is it?", "lord_talk",[]],
@@ -3802,7 +3802,7 @@ dialogs = [
                             (str_store_troop_name,s14,":quest_target_troop"),
                             ]+gender_fix(reg3, ":quest_target_troop")+[
                             ],
-   "I should like {s14} returned to me, {s65}, if you no longer require {reg3?her:his} services.", "lord_lend_companion_end",
+   "I'd like {s14} returned to me, {s65}, if you're quite finished with his {reg3?her:his} services.", "lord_lend_companion_end",
    []],
 
   [anyone,"lord_lend_companion_end",[(neg|hero_can_join, "p_main_party")],
@@ -10162,7 +10162,7 @@ They are going around making terrible accusations against me, impugning my honor
 	 (str_store_string, s2, "@The {s9} at {s5} asked you to hunt down a pirate named {s4}. They are currently believed to be at {s3}."),	#modified
    ]],
   [anyone,"tavernkeeper_tell_mission", [(eq,"$random_quest_no","qst_bounty_5")],
-   "Yes, but it might be difficult. It seems a certain customer is being hunted down by a certain mercenary. Well trained, well armored... yeah, contract versus contract. Go to {s3} and eliminate a bountyhunter named {s4}. If you succeed you'll be rewarded with 300 credits.", "tavernkeeper_mission_hunt_down_fugitive_told",
+   "Yes, but it might be difficult. It seems a certain customer is being hunted down by a certain mercenary. Well-trained, well-armored... yeah, contract versus contract. Go to {s3} and eliminate a bountyhunter named {s4}. If you succeed you'll be rewarded with 300 credits.", "tavernkeeper_mission_hunt_down_fugitive_told",
    [
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),
