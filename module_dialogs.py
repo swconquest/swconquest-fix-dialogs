@@ -2156,7 +2156,7 @@ dialogs = [
 
   [anyone|plyr,"rebel_thanks_answer", [], "It was an honor to fight for your cause, {reg65?madame:my lord}.", "rebel_thanks_answer_2", []],
   [anyone|plyr,"rebel_thanks_answer", [], "You will always have my loyal support, {reg65?my lady:sir}.", "rebel_thanks_answer_2", []],
-0
+
   [anyone,"rebel_thanks_answer_2", [], "I will miss living this life of adventure with you, but my duties await me. So... good-bye for now, {playername}.\
  I hope I'll see you again soon.", "close_window", []],
 
