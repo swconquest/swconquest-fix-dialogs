@@ -2223,7 +2223,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("spaceship_tie_fighter_desc", "The TIE Fighter is a bare-bones fighter that is only noticeable^ for having the latest in propulsion technology."),
   ("spaceship_imperial_shuttle_name", "Lambda-class T-4a Shuttle"),
   #("spaceship_imperial_shuttle_desc", "A true beauty, the Imperial Shuttle combines speed with troop support capabilites. ^^It has one troop compartment with room for two more and a MK-I Medical bay ^which can be upgraded to MK-II. ^^The current MK-I scanners could be upgraded to MK-III if you require a larger scanning range."),
-  ("spaceship_imperial_shuttle_desc", "A true beauty, the Lambdap-class Shuttle combines engine speed ^with troop support capabilites and capacity."),
+  ("spaceship_imperial_shuttle_desc", "A true beauty, the Lambda-class Shuttle combines engine speed ^with troop support capabilites and capacity."),
   #rebel
   ("spaceship_a_wing_name", "A-Wing"),
   ("spaceship_a_wing_desc", "The A-Wing is the fastest fighter in the galaxy. ^Combined with its powerful sensor array, it makes an excellent reconnaissance vessel."),
